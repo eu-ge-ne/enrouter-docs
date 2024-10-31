@@ -1,0 +1,33 @@
+{
+  "name": "enrouter-docs",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "format": "prettier . --check",
+    "format:fix": "prettier . --write",
+    "clean": "turbo run clean",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "dev": "turbo run dev --filter=@enrouter/dev",
+    "preview": "turbo run preview --filter=@enrouter/edge",
+    "deploy": "turbo run deploy --filter=@enrouter/edge"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eu-ge-ne/enrouter-docs.git"
+  },
+  "author": "Eugene Pobochny",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eu-ge-ne/enrouter-docs/issues"
+  },
+  "homepage": "https://github.com/eu-ge-ne/enrouter-docs#readme",
+  "packageManager": "pnpm@9.12.3",
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.8",
+    "turbo": "^2.2.3"
+  }
+}
