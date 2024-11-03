@@ -9,8 +9,3 @@ html {
 body {
   @apply bg-appBg text-appFg;
 }
-
-code.language-none {
-  @apply bg-appCodeBg !important;
-  @apply text-appFg !important;
-}
