@@ -3,6 +3,7 @@ import { fileURLToPath } from "node:url";
 
 import type { Config } from "tailwindcss";
 import colors from "tailwindcss/colors";
+import typography from "@tailwindcss/typography";
 
 const content = [
   resolve(
@@ -30,5 +31,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [typography],
 } satisfies Config;
