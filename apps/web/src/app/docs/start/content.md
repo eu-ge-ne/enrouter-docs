@@ -2,7 +2,7 @@
 
 ## Scaffold project
 
-Create new Vite project from `react-ts` template and run it:
+Create new `vite` project from `react-ts` template and run it:
 
 ```bash
 pnpm create vite enrouter-demo --template react-ts
@@ -13,7 +13,7 @@ pnpm install
 pnpm dev
 ```
 
-You've got a basic single page React application with only one page
+You've got a basic single page `react` application with only one page
 available at `/` where you can click a button and increment the counter:
 
 ![Start 0](/start-0.png "Start 0")
@@ -24,7 +24,7 @@ incrementing the counter the button will be decrementing it.
 We will put original page at `/incr`.
 The new page which you are going to create will be located at `/decr`.
 
-And, indeed, we need a home page containing links to both pages.
+Indeed, we need a home page containing links to both pages.
 
 ## Install enrouter
 
@@ -32,7 +32,7 @@ And, indeed, we need a home page containing links to both pages.
 pnpm add -D enrouter
 ```
 
-Add enrouter plugin to your `vite.config.ts`:
+Add `enrouter` plugin to your `vite.config.ts`:
 
 ```ts
 // vite.config.ts
@@ -55,7 +55,7 @@ export default defineConfig({
 [Vite Plugin](/docs/api/vite-plugin) explains why `virtual:enrouter` must be
 added to `optimizeDeps.exclude`.
 
-Last step of installing enrouter is to add `BrowserRouter` component to the
+Last step of installing `enrouter` is to add `BrowserRouter` component to the
 entry file `src/main.tsx`:
 
 ```tsx
