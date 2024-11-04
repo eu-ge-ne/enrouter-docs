@@ -52,8 +52,8 @@ export default defineConfig({
 
 `src/app` is a folder where you put your route components.
 
-[Vite Plugin](/docs/api/vite-plugin) explains why `virtual:enrouter` must be
-added to `optimizeDeps.exclude`.
+[Vite](/docs/vite) explains why `virtual:enrouter` must be added to
+`optimizeDeps.exclude`.
 
 Last step of installing `enrouter` is to add `BrowserRouter` component to the
 entry file `src/main.tsx`:
