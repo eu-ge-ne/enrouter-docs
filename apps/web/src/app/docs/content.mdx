@@ -12,11 +12,12 @@
   </a>
 </div>
 
-`enrouter` is a file based router library for React.
+`enrouter` is a file based router library for React. It is written in TypeScript
+and compiled to ES2023.
 
 **Please, be aware that the API is not stable yet and can be changed before
 reaching `v1.0.0`.
-The author is endeavouring to find the simplest and most elegant API & DX**
+The goal is to find the simplest and most elegant API & DX**
 
 ## Install
 
@@ -26,17 +27,18 @@ pnpm add -D enrouter
 
 ## Requirements
 
-- JavaScript
+- Currently `react@rc` is being used as a dependency. `v1.0.0` is expected to be
+  compatible with React 18 and 19.
 
-  The library is written in TypeScript and compiled to JavaScript/ES2023 in
-  ESM format.
+- It relies on `vite`/`rollup` "virtual module" feature for generating routes
+  from source modules.
 
-- React
+## Environments
 
-  Currently `react@rc` is being used as a dependency. `v1.0.0` is expeceted to
-  be compatible with React 18 and 19.
+`enrouter` runs in all modern browsers, on the edge and Node.js.
 
-- Vite
+## Learn
 
-  `enrouter` relies on `vite`/`rollup` "virtual module" feature for generating
-  routes from source modules.
+- Start from [Getting Started](/docs/start).
+- Learn how [Routing](/docs/routing) works.
+- Visit [API](/docs/api).
