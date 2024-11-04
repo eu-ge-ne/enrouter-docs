@@ -1,7 +1,7 @@
 # matchLocation
 
 ```ts
-declare function matchLocation(location: string): Promise<Match | undefined>;
+function matchLocation(location: string): Promise<Match | undefined>;
 ```
 
 Given a location to match, returns linked list of `Match` objects representing
