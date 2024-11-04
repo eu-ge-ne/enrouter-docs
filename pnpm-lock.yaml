@@ -112,7 +112,7 @@ importers:
         version: 10.4.20(postcss@8.4.47)
       enrouter:
         specifier: ^0.0.15
-        version: 0.0.15
+        version: link:../../../enrouter
       glob:
         specifier: ^11.0.0
         version: 11.0.0
