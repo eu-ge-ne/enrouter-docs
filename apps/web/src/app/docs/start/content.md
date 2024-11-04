@@ -82,7 +82,7 @@ main();
 
 ## Define routes
 
-Visit [Routes](/docs/api/routes) for more details about how routing works.
+Visit [Routing](/docs/routing) for more details about how routing works.
 
 ### \_layout.tsx
 
