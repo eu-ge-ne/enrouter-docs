@@ -22,6 +22,7 @@ function Layout() {
           <Link loose href="/docs/api">
             API
           </Link>
+          <Link href="/docs/vite">Vite</Link>
         </ul>
         <Outlet name="Menu" />
       </div>
