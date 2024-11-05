@@ -27,8 +27,6 @@ function Menu() {
 }
 
 function Main() {
-  return (
-    <p>Hello world</p>
-  );
+  return <p>Hello world</p>;
 }
 ```
