@@ -1,17 +1,13 @@
 # \_layout.tsx
 
-ES module exporting default object with:
+Module exporting layout components which are rendered by
+[Outlets](/docs/api/outlet).
 
-- Keys as component names
-- Values as layout components.
+By convention, layout modules must `export default` object with components.
 
-Layout components are rendered by [Outlets](/docs/api/outlet).
-
-Multiple components can be exported from a single `_layout` module,
-thus `<Outlet />` accepts `name` prop:
-
-- If `name` was provided, a component with that name is rendered.
-- If `name` was not provided, a first component from object entries is rendered.
+Outlets select components for rendering by name.
+Keys of exported object are the names of components.
+They connect components to Outlets.
 
 ## Example
 
