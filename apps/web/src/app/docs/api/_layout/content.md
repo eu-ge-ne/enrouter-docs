@@ -5,7 +5,7 @@ ES module exporting default object with:
 - Keys as component names
 - Values as layout components.
 
-Layout components are rendered by [Outlet](/docs/api/outlet) components.
+Layout components are rendered by [Outlets](/docs/api/outlet).
 
 Multiple components can be exported from a single `_layout` module,
 thus `<Outlet />` accepts `name` prop:
