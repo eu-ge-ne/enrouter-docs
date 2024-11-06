@@ -3,7 +3,9 @@
 ES module exporting default object with:
 
 - Keys as component names
-- Values as layout components.
+- Values as content components.
+
+Content components are rendered by [Outlets](/docs/api/outlet).
 
 For example:
 
