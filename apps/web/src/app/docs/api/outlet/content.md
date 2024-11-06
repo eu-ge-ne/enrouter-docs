@@ -16,12 +16,13 @@ Rendering behavior depends on current route match:
 - If match is exact, elements from current matching route's `_content` module
   are rendered.
 
-Outlets can be named:
+Outlets can be used only in `_layout` modules.
+
+`_layout.tsx`, `_content.tsx`, `_void.tsx` modules can export multiple
+components. Thus, `<Outlet />` accepts `name` prop:
 
 - If `name` was provided, a component with that name is rendered.
 - If `name` was not provided, a first component from object entries is rendered.
-
-Outlets can be used only in `_layout` modules.
 
 ## Examples
 
