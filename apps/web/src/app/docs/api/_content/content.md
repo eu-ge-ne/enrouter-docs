@@ -1,13 +1,15 @@
 # \_content.tsx
 
-ES module exporting default object with:
+Module exporting content components which are rendered by
+[Outlets](/docs/api/outlet).
 
-- Keys as component names
-- Values as content components.
+By convention, content modules must `export default` object with components.
 
-Content components are rendered by [Outlets](/docs/api/outlet).
+Outlets select components for rendering by name.
+Keys of exported object are the names of components.
+They connect components to Outlets.
 
-For example:
+## Example
 
 ```tsx
 // _content.tsx
