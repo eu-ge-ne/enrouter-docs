@@ -26,7 +26,7 @@ function Layout() {
         </ul>
         <Outlet name="Menu" />
       </div>
-      <div className="max-sm:pt-4 md:w-[45rem] md:pl-4">
+      <div className="max-sm:pt-4 md:pl-4">
         <Mdx>
           <Outlet name="Docs" />
         </Mdx>
