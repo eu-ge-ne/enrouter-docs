@@ -1,3 +1,0 @@
-# \_void.tsx
-
-TODO
