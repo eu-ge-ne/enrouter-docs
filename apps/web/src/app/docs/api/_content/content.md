@@ -10,6 +10,8 @@ Content components are rendered by [Outlets](/docs/api/outlet).
 For example:
 
 ```tsx
+// _content.tsx
+
 export default {
   Menu,
   Main,
