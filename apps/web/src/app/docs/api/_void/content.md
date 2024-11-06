@@ -1,8 +1,10 @@
 # \_void.tsx
 
-ES module exporting default object with:
+Module exporting void components which are rendered by
+[Outlets](/docs/api/outlet).
 
-- Keys as component names
-- Values as void components.
+By convention, void modules must `export default` object with components.
 
-Void components are rendered by [Outlets](/docs/api/outlet).
+Outlets select components for rendering by name.
+Keys of exported object are the names of components.
+They connect components to Outlets.
