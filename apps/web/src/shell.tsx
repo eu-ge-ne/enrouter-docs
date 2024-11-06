@@ -19,7 +19,7 @@ export function Shell({ styles, children }: PropsWithChildren<ShellProps>) {
           />
           <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-N28HCL4GB9"
+            src="https://www.googletagmanager.com/gtag/js?id=G-ELBVYEYVVT"
           ></script>
           <script
             dangerouslySetInnerHTML={{
@@ -27,7 +27,7 @@ export function Shell({ styles, children }: PropsWithChildren<ShellProps>) {
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-N28HCL4GB9');
+gtag('config', 'G-ELBVYEYVVT');
 `,
             }}
           ></script>

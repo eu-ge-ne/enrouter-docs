@@ -25,14 +25,57 @@ Outlets can be used only in `_layout` modules.
 
 ## Examples
 
-### Unnamed
+### Anonymous
 
 ```tsx
-<Outlet />
+// _layout.tsx
+
+import { Outlet } from "enrouter";
+
+export default {
+  Layout,
+};
+
+function Layout() {
+  return (
+    <div>
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/about">About</a>
+        </li>
+      </ul>
+      <div>
+        <Outlet />
+      </div>
+    </div>
+  );
+}
 ```
 
 ### Named
 
 ```tsx
-<Outlet name="..." />
+// _layout.tsx
+
+import { Outlet } from "enrouter";
+
+export default {
+  Layout,
+};
+
+function Layout() {
+  return (
+    <div>
+      <div>
+        <Outlet name="Menu" />
+      </div>
+      <div>
+        <Outlet name="Menu" />
+      </div>
+    </div>
+  );
+}
 ```
