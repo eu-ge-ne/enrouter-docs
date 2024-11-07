@@ -25,6 +25,7 @@ export default {
         appButtonBg: colors.sky[800],
         appButtonBorder: colors.sky[700],
 
+        appMenu: colors.sky[950],
         appMenuHighlight: colors.sky[600],
 
         appCodeBg: colors.stone[600],

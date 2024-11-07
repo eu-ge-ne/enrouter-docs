@@ -10,6 +10,7 @@
 
 ## Hooks
 
+- [useActive](/docs/api/use-active)
 - [useLink](/docs/api/use-link)
 - [useMatch](/docs/api/use-match)
 

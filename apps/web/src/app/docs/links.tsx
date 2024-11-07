@@ -9,7 +9,7 @@ export function PrimaryLinkItem({
   const liClassName = useActive({
     path: href,
     loose,
-    value: ["border-r-4 border-appMenuHighlight", ""],
+    value: ["border-r-2 border-appMenuHighlight", ""],
   });
 
   const aClassName = useActive({
