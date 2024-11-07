@@ -1,8 +1,20 @@
 # API
 
-- [matchLocation](/docs/api/matchLocation)
+## Functions
+
+- [matchLocation](/docs/api/match-location)
+
+## Components
+
 - [Outlet](/docs/api/outlet)
-- [\_layout.tsx](/docs/api/_layout)
+
+## Hooks
+
+- [useLink](/docs/api/use-link)
+- [useMatch](/docs/api/use-match)
+
+## Routes
+
 - [\_content.tsx](/docs/api/_content)
+- [\_layout.tsx](/docs/api/_layout)
 - [\_void.tsx](/docs/api/_void)
-- [useMatch](/docs/api/useMatch)
