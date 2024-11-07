@@ -15,6 +15,7 @@ function Menu() {
         <Link href="/docs/api/outlet">Outlet</Link>
         <Link href="/docs/api/use-active">useActive</Link>
         <Link href="/docs/api/use-link">useLink</Link>
+        <Link href="/docs/api/use-location">useLocation</Link>
         <Link href="/docs/api/use-match">useMatch</Link>
         <Link href="/docs/api/_content">_content.tsx</Link>
         <Link href="/docs/api/_layout">_layout.tsx</Link>
