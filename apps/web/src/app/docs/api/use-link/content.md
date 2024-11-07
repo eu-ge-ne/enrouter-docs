@@ -18,14 +18,10 @@ an anchor element or any React component implementing navigation.
 import { useLink } from "enrouter";
 
 export default {
-  Content
+  Content,
 };
 
 function Content() {
-  return (
-    <a {...useLink("/")}>
-      Home
-    </a>
-  );
+  return <a {...useLink("/")}>Home</a>;
 }
 ```
