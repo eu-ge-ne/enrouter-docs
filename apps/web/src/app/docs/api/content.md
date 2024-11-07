@@ -12,6 +12,7 @@
 
 - [useActive](/docs/api/use-active)
 - [useLink](/docs/api/use-link)
+- [useLocation](/docs/api/use-location)
 - [useMatch](/docs/api/use-match)
 
 ## Routes
