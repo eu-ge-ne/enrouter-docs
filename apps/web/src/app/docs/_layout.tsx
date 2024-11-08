@@ -14,7 +14,7 @@ function Layout() {
         <ul className="flex flex-col gap-y-2 border-r border-appMenu">
           <Link href="/docs">Docs</Link>
           <Link loose href="/docs/start">
-            Getting Started
+            Get Started
           </Link>
           <Link loose href="/docs/routes">
             Routes
