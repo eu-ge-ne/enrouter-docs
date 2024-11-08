@@ -1,11 +1,11 @@
 # Outlet
 
-```tsx
+```ts
 interface OutletProps {
   name?: string;
 }
 
-function Outlet({ name }: OutletProps): ReactNode;
+function Outlet(props: OutletProps): ReactNode;
 ```
 
 Renders elements from next (or current) matching route.
