@@ -1,7 +1,7 @@
 # \_content.tsx
 
 Module exporting content components which are rendered by
-[Outlets](/docs/api/outlet).
+[Outlets](/docs/components/outlet).
 
 By convention, content modules must `export default` object with components.
 

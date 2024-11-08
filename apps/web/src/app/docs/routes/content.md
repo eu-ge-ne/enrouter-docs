@@ -1,4 +1,4 @@
-# Routing
+# Routes
 
 In application routes are defined by a tree of folders and files.
 Any route consists of:
@@ -13,9 +13,9 @@ Any route consists of:
   Define content which is rendered when the route is matched. Following files
   define corresponding aspects of the route:
 
-  - [\_layout.tsx](/docs/api/_layout) - content layout.
-  - [\_content.tsx](/docs/api/_content) - route's content.
-  - [\_void.tsx](/docs/api/_content) - content, rendered in "not found" case.
+  - [\_layout.tsx](/docs/routes/_layout) - content layout.
+  - [\_content.tsx](/docs/routes/_content) - route's content.
+  - [\_void.tsx](/docs/routes/_content) - content, rendered in "not found" case.
 
 Route's content is always nested and wrapped recursively in parent content.
 
