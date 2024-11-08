@@ -19,6 +19,9 @@ function Layout() {
           <Link loose href="/docs/routing">
             Routing
           </Link>
+          <Link loose href="/docs/components">
+            Components
+          </Link>
           <Link loose href="/docs/hooks">
             Hooks
           </Link>

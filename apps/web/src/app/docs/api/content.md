@@ -4,10 +4,6 @@
 
 - [matchLocation](/docs/api/match-location)
 
-## Components
-
-- [Outlet](/docs/api/outlet)
-
 ## Routes
 
 - [\_content.tsx](/docs/api/_content)
