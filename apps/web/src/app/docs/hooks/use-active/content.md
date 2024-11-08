@@ -7,7 +7,7 @@ interface UseActiveParams<T> {
   value: [T, T];
 }
 
-function useActive<T>({ path, loose, value }: UseActiveParams<T>): T;
+function useActive<T>(params: UseActiveParams<T>): T;
 ```
 
 If path is active, returns first value. Otherwise, returns second value.
