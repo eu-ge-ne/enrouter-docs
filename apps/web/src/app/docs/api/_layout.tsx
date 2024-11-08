@@ -13,7 +13,6 @@ function Menu() {
       <ul className="mt-4 flex flex-col gap-y-2 border-r border-appMenu">
         <Link href="/docs/api/match-location">matchLocation</Link>
         <Link href="/docs/api/outlet">Outlet</Link>
-        <Link href="/docs/api/use-active">useActive</Link>
         <Link href="/docs/api/use-link">useLink</Link>
         <Link href="/docs/api/use-location">useLocation</Link>
         <Link href="/docs/api/use-match">useMatch</Link>
