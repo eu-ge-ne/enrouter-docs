@@ -1,4 +1,4 @@
 # Components
 
-- [Static Router](/docs/components/static-router)
+- [StaticRouter](/docs/components/static-router)
 - [Outlet](/docs/components/outlet)
