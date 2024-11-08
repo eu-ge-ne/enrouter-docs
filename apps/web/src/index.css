@@ -9,3 +9,7 @@ html {
 body {
   @apply bg-appBg text-appFg;
 }
+
+.prose {
+  @apply md:min-w-[65ch];
+}
