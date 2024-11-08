@@ -24,7 +24,7 @@ function Content() {
           className="rounded-md border border-appButtonBorder bg-appButtonBg px-4 py-2 text-sm"
           {...useLink("/docs/start")}
         >
-          Get started
+          Get Started
         </a>
         <a
           className="flex items-center gap-2 rounded-md border border-appButtonBorder px-4 py-2 text-sm"

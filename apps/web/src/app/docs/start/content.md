@@ -1,8 +1,8 @@
-# Getting Started
+# Get Started
 
 ## Scaffold project
 
-Create new `vite` project from `react-ts` template and run it:
+Create new Vite project from `react-ts` template and run it:
 
 ```bash
 pnpm create vite enrouter-demo --template react-ts
@@ -13,7 +13,7 @@ pnpm install
 pnpm dev
 ```
 
-You've got a basic single page `react` application with only one page
+You've got a basic single page React application with only one page
 available at `/` where you can click a button and increment the counter:
 
 ![Start 0](/start-0.png "Start 0")
