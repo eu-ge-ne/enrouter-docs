@@ -22,9 +22,6 @@ function Root() {
             <Link href="/docs">Docs</Link>
           </li>
           <li>
-            <Link href="/docs/api">API</Link>
-          </li>
-          <li>
             <a href="https://github.com/eu-ge-ne/enrouter" target="_blank">
               <GitHub size="1.5rem" />
             </a>

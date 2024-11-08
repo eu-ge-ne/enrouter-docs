@@ -1,7 +1,7 @@
 # \_layout.tsx
 
 Module exporting layout components which are rendered by
-[Outlets](/docs/api/outlet).
+[Outlets](/docs/components/outlet).
 
 By convention, layout modules must `export default` object with components.
 

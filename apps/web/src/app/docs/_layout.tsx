@@ -16,17 +16,14 @@ function Layout() {
           <Link loose href="/docs/start">
             Getting Started
           </Link>
-          <Link loose href="/docs/routing">
-            Routing
+          <Link loose href="/docs/routes">
+            Routes
           </Link>
           <Link loose href="/docs/components">
             Components
           </Link>
           <Link loose href="/docs/hooks">
             Hooks
-          </Link>
-          <Link loose href="/docs/api">
-            API
           </Link>
           <Link href="/docs/vite">Vite</Link>
         </ul>
