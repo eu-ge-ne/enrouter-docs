@@ -1,16 +1,53 @@
-# Vite Plugin
+# Vite
 
-## virtual:enrouter
+## Plugin
 
-enrouter creates internal "virtual" module with name `virtual:enrouter`
-where it is generating and storing your route tree.
-You need to add `virtual:enrouter` module to `optimizeDeps.exclude` because
-the notion of "virtual" module does exist only in Rollup and does not exist in
-esbuild.
+enrouter comes with Vite plugin for generating routes from file system.
 
-Vite is using Rollup for producing final bundle for prod.
-But during development it is using two bundlers: Rollup for compiling your code
-and esbuild for precompiling dependencies in `node_modules` folder.
-That's why we need to use `optimizeDeps.exclude`. To tell esbuild to
-ignore `virtual:enrouter` and do not try to compile it, because it is handled
-somewhere else (by Rollup).
+It accepts `path` parameter - path to a folder with route modules:
+
+```ts
+// vite.config.ts
+
+import enrouter from "enrouter/vite/plugin";
+
+export default defineConfig({
+  plugins: [enrouter({ path: "src/app" })],
+});
+```
+
+### virtual:enrouter
+
+The result of route generation is a "virtual" module with name
+`virtual:enrouter`. This module exports the route tree which was created from
+your routes.
+
+"Virtual modules" is a Rollup/Vite
+[feature](https://rollupjs.org/plugin-development/#a-simple-example). It allows
+creating "adhoc" modules in memory instead of writing source code to a file.
+
+Vite uses Rollup for generating production bundle.
+In development mode it uses two bundlers:
+
+- Rollup for compiling your code
+- esbuild for precompiling dependencies in `node_modules` folder
+
+When esbuild tries to precompile `enrouter` dependency it eventually discovers
+`virtual:enrouter` and tries to load it.
+But it does not know how to process it and will fail, because there is no
+corresponding plugin provided.
+
+Therefore, we need to tell Vite to ignore `virtual:enrouter` and do not try to
+"precompile" it, by adding it to `optimizeDeps.exclude`:
+
+```ts
+// vite.config.ts
+
+export default defineConfig({
+  //...
+
+  optimizeDeps: {
+    exclude: ["virtual:enrouter"],
+  },
+});
+```
