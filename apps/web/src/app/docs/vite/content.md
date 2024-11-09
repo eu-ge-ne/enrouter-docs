@@ -22,17 +22,17 @@ The result of route generation is a "virtual" module with name
 `virtual:enrouter`. This module exports the route tree which was created from
 your routes.
 
-"Virtual modules" is a Rollup/Vite
+"Virtual modules" is Rollup
 [feature](https://rollupjs.org/plugin-development/#a-simple-example). It allows
 creating "adhoc" modules in memory instead of writing source code to a file.
 
 Vite uses Rollup for generating production bundle.
-In development mode it uses two bundlers:
+But in development mode it uses two bundlers:
 
-- Rollup for compiling your code
-- esbuild for precompiling dependencies in `node_modules` folder
+- Rollup for compiling your code.
+- esbuild for pre-bundling dependencies in `node_modules` folder.
 
-When esbuild tries to precompile `enrouter` dependency it eventually discovers
+When esbuild bundles `enrouter` dependency it eventually discovers
 `virtual:enrouter` and tries to load it.
 But it does not know how to process it and will fail, because there is no
 corresponding plugin provided.
