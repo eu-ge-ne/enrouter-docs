@@ -1,5 +1,15 @@
 import Content from "./content.md";
 
 export default {
-  Content,
+  Docs,
 };
+
+function Docs() {
+  return (
+    <>
+      <title>enrouter docs | Outlet component</title>
+      <meta name="description" content="File-based router library for React" />
+      <Content />
+    </>
+  );
+}
