@@ -4,20 +4,18 @@ In application routes are defined by a tree of folders and files.
 Any route consists of:
 
 - Folder (e.g. `src/app/about`).
-
-  Name of the folder declares route url pattern.
+  Name of the folder defines url pattern of the route.
 
 - Files inside the folder (e.g. `src/app/about/_layout.tsx`,
   `src/app/about/_content.tsx`, etc.).
-
-  Define content which is rendered when the route is matched. Following files
-  define corresponding aspects of the route:
+  They define content rendered when the route is matched.
+  Following files define corresponding aspects of the route:
 
   - [\_layout.tsx](/docs/routes/_layout) - content layout.
   - [\_content.tsx](/docs/routes/_content) - route's content.
   - [\_void.tsx](/docs/routes/_content) - content, rendered in "not found" case.
 
-Route's content is always nested and wrapped recursively in parent content.
+Route's content is nested and wrapped recursively in parent content.
 
 For example, this folder layout:
 
