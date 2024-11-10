@@ -38,7 +38,7 @@ But it does not know how to process it and will fail, because there is no
 corresponding plugin provided.
 
 Therefore, we need to tell Vite to ignore `virtual:enrouter` and do not try to
-"precompile" it, by adding it to `optimizeDeps.exclude`:
+"precompile" it. We just add it to `optimizeDeps.exclude`:
 
 ```ts
 // vite.config.ts
