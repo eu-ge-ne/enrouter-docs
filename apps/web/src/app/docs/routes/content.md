@@ -15,7 +15,7 @@ Any route consists of:
   - [\_content.tsx](/docs/routes/_content) - route's content.
   - [\_void.tsx](/docs/routes/_content) - content, rendered in "not found" case.
 
-Route's content is always nested and wrapped recursively in parent content.
+Route's content is nested and wrapped recursively in parent content.
 
 For example, this folder layout:
 
