@@ -9,6 +9,7 @@ function Docs() {
     <>
       <title>enrouter | Docs</title>
       <meta name="description" content="File-based router library for React" />
+      <link rel="canonical" href="https://enrouter.dev/docs" />
       <Content />
     </>
   );
