@@ -17,6 +17,6 @@
     "@enrouter/web": "workspace:*",
     "enrouter": "^0.0.18",
     "typescript": "^5.6.3",
-    "wrangler": "^3.86.0"
+    "wrangler": "^3.86.1"
   }
 }
