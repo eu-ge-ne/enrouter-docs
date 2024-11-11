@@ -36,8 +36,8 @@ importers:
         specifier: ^22.9.0
         version: 22.9.0
       enrouter:
-        specifier: ^0.0.18
-        version: 0.0.18
+        specifier: ^0.0.19
+        version: 0.0.19
       express:
         specifier: ^5.0.1
         version: 5.0.1
@@ -66,8 +66,8 @@ importers:
         specifier: workspace:*
         version: link:../web
       enrouter:
-        specifier: ^0.0.18
-        version: 0.0.18
+        specifier: ^0.0.19
+        version: 0.0.19
       typescript:
         specifier: ^5.6.3
         version: 5.6.3
@@ -111,8 +111,8 @@ importers:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.49)
       enrouter:
-        specifier: ^0.0.18
-        version: 0.0.18
+        specifier: ^0.0.19
+        version: 0.0.19
       glob:
         specifier: ^11.0.0
         version: 11.0.0
@@ -1578,8 +1578,8 @@ packages:
     resolution: {integrity: sha512-Q0n9HRi4m6JuGIV1eFlmvJB7ZEVxu93IrMyiMsGC0lrMJMWzRgx6WGquyfQgZVb31vhGgXnfmPNNXmxnOkRBrg==}
     engines: {node: '>= 0.8'}
 
-  enrouter@0.0.18:
-    resolution: {integrity: sha512-VM42i3tIUnGijGhZcsMrpng3g0c7bgpTFW02jfxzCpeMZBQocC+C1x3K8LzKROdCQWmXNq+WuLHcK7E8IR9b0w==}
+  enrouter@0.0.19:
+    resolution: {integrity: sha512-eJTJMx/12CGV1kcPgTjpkF4ohkClPGNAs2YiRaAJPZ9d769elxyxJ21JZRpRgaZG66kuWhXdnKkpyXh5szs9bA==}
 
   es-define-property@1.0.0:
     resolution: {integrity: sha512-jxayLKShrEqqzJ0eumQbVhTYQM27CfT1T35+gCgDFoL82JLsXqTJ76zv6A0YLOgEnLUMvLzsDsGIrl8NFpT2gQ==}
@@ -4233,7 +4233,7 @@ snapshots:
 
   encodeurl@2.0.0: {}
 
-  enrouter@0.0.18: {}
+  enrouter@0.0.19: {}
 
   es-define-property@1.0.0:
     dependencies:

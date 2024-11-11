@@ -6,6 +6,9 @@
     "module": "preserve",
     "jsx": "react-jsx",
     "declaration": true,
-    "lib": ["es2022", "dom", "dom.iterable"]
+    "lib": ["es2022", "dom", "dom.iterable"],
+    "paths": {
+      "react": ["./node_modules/@types/react"]
+    }
   }
 }
