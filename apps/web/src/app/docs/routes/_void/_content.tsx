@@ -9,6 +9,7 @@ function Docs() {
     <>
       <title>enrouter docs | _void route</title>
       <meta name="description" content="File-based router library for React" />
+      <link rel="canonical" href="https://enrouter.dev/docs/routes/_void" />
       <Content />
     </>
   );

@@ -9,6 +9,10 @@ function Docs() {
     <>
       <title>enrouter docs | Outlet component</title>
       <meta name="description" content="File-based router library for React" />
+      <link
+        rel="canonical"
+        href="https://enrouter.dev/docs/components/outlet"
+      />
       <Content />
     </>
   );

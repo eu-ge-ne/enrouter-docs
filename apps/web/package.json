@@ -28,11 +28,11 @@
     "@types/react-dom": "npm:types-react-dom@rc",
     "@vitejs/plugin-react": "^4.3.3",
     "autoprefixer": "^10.4.20",
-    "enrouter": "^0.0.18",
+    "enrouter": "^0.0.19",
     "glob": "^11.0.0",
     "globals": "^15.12.0",
     "mermaid": "^11.4.0",
-    "postcss": "^8.4.47",
+    "postcss": "^8.4.49",
     "prism-themes": "^1.9.0",
     "prismjs": "^1.29.0",
     "react": "19.0.0-rc-02c0e824-20241028",
@@ -40,7 +40,7 @@
     "remark-gfm": "^4.0.0",
     "tailwindcss": "^3.4.14",
     "typescript": "^5.6.3",
-    "vite": "^5.4.10"
+    "vite": "^5.4.11"
   },
   "overrides": {
     "@types/react": "npm:types-react@rc",

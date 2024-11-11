@@ -9,6 +9,7 @@ function Docs() {
     <>
       <title>enrouter docs | useActive hook</title>
       <meta name="description" content="File-based router library for React" />
+      <link rel="canonical" href="https://enrouter.dev/docs/hooks/use-active" />
       <Content />
     </>
   );

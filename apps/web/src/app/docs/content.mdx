@@ -1,14 +1,19 @@
 # Docs
 
-<div className="mt-8 flex gap-4">
+<div className="flex gap-4">
   <a href="https://github.com/eu-ge-ne/enrouter">
     <img
+      className="m-0"
       alt="enrouter GitHub"
       src="https://img.shields.io/github/package-json/v/eu-ge-ne/enrouter?label=github"
     />
   </a>
   <a href="https://www.npmjs.com/package/enrouter">
-    <img alt="enrouter npm" src="https://img.shields.io/npm/v/enrouter" />
+    <img
+      className="m-0"
+      alt="enrouter npm"
+      src="https://img.shields.io/npm/v/enrouter"
+    />
   </a>
 </div>
 
@@ -19,7 +24,7 @@ and compiled to ES2023.
 reaching `v1.0.0`.
 The goal is to find the simplest and most elegant API & DX**
 
-## Install
+## Installation
 
 ```bash
 pnpm add -D enrouter
@@ -27,17 +32,14 @@ pnpm add -D enrouter
 
 ## Requirements
 
-- Currently `react@rc` is being used as a dependency. `v1.0.0` is expected to be
-  compatible with React 18 and 19.
-
-- It relies on Vite/Rollup "virtual module" feature for generating routes
-  from source modules.
+- `react@^18`.
+- Vite. enrouter relies on Vite/Rollup "virtual module" feature for route
+  generation.
 
 ## Environments
 
 enrouter runs in all modern browsers, on the edge and Node.js.
 
-## Learn
+## Next
 
-- Start from [Get Started](/docs/start).
-- Learn how [Routes](/docs/routes) work.
+[Get Started](https://enrouter.dev/docs/start).
