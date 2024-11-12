@@ -4,7 +4,6 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import mdx from "@mdx-js/rollup";
 import remarkGfm from "remark-gfm";
-import { globSync } from "glob";
 import enrouter from "enrouter/vite/plugin";
 
 const root = resolve(import.meta.dirname, "..");
@@ -26,7 +25,7 @@ export default defineConfig({
     outDir: "dist/server",
     emptyOutDir: false,
     lib: {
-      entry: ["src/ssr.tsx", ...globSync("./src/app/**/_*.tsx")],
+      entry: "src/ssr.tsx",
       formats: ["es"],
     },
     ssr: true,

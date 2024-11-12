@@ -4,7 +4,6 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import mdx from "@mdx-js/rollup";
 import remarkGfm from "remark-gfm";
-import { globSync } from "glob";
 import enrouter from "enrouter/vite/plugin";
 
 const root = resolve(import.meta.dirname, "..");
@@ -28,7 +27,7 @@ export default defineConfig({
     modulePreload: false,
     emptyOutDir: false,
     rollupOptions: {
-      input: ["src/main.tsx", ...globSync("./src/app/**/_*.tsx")],
+      input: "src/main.tsx",
       output: {
         manualChunks(id) {
           if (!id.includes("node_modules")) {
@@ -51,10 +50,6 @@ export default defineConfig({
   },
   css: {
     postcss: resolve(root, "configs/postcss.config.js"),
-  },
-  // dev server
-  optimizeDeps: {
-    exclude: ["virtual:enrouter"],
   },
   ssr: {
     noExternal: ["enrouter"], // https://vite.dev/guide/ssr.html#ssr-externals
