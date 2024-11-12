@@ -17,11 +17,13 @@ function Content() {
       <link rel="canonical" href="https://enrouter.dev" />
       <div className="fixed bottom-0 left-0 right-0 top-0 -z-10 flex flex-col items-center justify-center gap-8 p-4">
         <p className="max-w-[30rem] text-center">
-          File-based router library for React.
+          Router library for React and Vite plugin<br/>
+          providing seamless file-based routing with "named outlets"
         </p>
         <p className="max-w-[30rem] text-center text-sm italic">
-          enrouter is not ready for production yet. It is at early development
-          stages and just making its first steps. Stay tuned for updates.
+          enrouter is not ready for production yet.<br/>
+          It is at early development stages and just making its first steps.<br/>
+          Stay tuned for updates.
         </p>
         <div className="flex justify-center gap-8">
           <a
