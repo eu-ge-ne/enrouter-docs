@@ -44,16 +44,10 @@ import enrouter from "enrouter/vite/plugin";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), enrouter({ path: "src/app" })],
-  optimizeDeps: {
-    exclude: ["virtual:enrouter"],
-  },
 });
 ```
 
 `src/app` is a folder where you put your route components.
-
-[Vite](/docs/vite) explains why `virtual:enrouter` must be added to
-`optimizeDeps.exclude`.
 
 Last step of installing `enrouter` is to add `BrowserRouter` component to the
 entry file `src/main.tsx`:
