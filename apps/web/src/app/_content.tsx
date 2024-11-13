@@ -12,7 +12,7 @@ function Content() {
 
   return (
     <>
-      <title>enrouter</title>
+      <title>enrouter | Home</title>
       <meta name="description" content="File-based router library for React" />
       <link rel="canonical" href="https://enrouter.dev" />
       <div className="fixed bottom-0 left-0 right-0 top-0 -z-10 flex flex-col items-center justify-center gap-8 p-4">
