@@ -11,6 +11,7 @@
  * Learn more at https://developers.cloudflare.com/workers/
  */
 
+import { isbot } from "isbot";
 //@ts-ignore
 import _createSsrHandler from "@enrouter/web/ssr";
 import manifest from "@enrouter/web/manifest";
@@ -30,13 +31,13 @@ const createSsrHandler = _createSsrHandler as CreateSsrHandler;
 const ssrHandler = createSsrHandler(manifest);
 
 export default {
-  async fetch(request, env, ctx): Promise<Response> {
-    const url = new URL(request.url);
-    switch (url.pathname) {
-      case "/random":
-        return new Response(crypto.randomUUID());
-      default:
-        return ssrHandler(request, { isBot: false });
-    }
+  async fetch(req, env, ctx): Promise<Response> {
+    const url = req.url;
+    const ua = req.headers.get("User-Agent");
+    const isBot = isbot(ua);
+
+    console.log({ url, ua, isBot });
+
+    return ssrHandler(req, { isBot });
   },
 } satisfies ExportedHandler<Env>;
