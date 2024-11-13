@@ -4,7 +4,15 @@
 
 enrouter comes with Vite plugin for generating routes from file system.
 
-It accepts `path` parameter - path to a folder with route modules:
+Accepts `path` parameter - a folder with route modules.
+
+In development or when building production bundle it:
+
+- looks into the folder at `path`
+- organizes modules into the tree of routes
+- creates adhoc virtual module exporting routes
+
+### Example
 
 ```ts
 // vite.config.ts
