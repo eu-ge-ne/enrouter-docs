@@ -19,16 +19,14 @@ import manifest from "@enrouter/web/manifest";
 import { type ViteManifest } from "enrouter/vite/manifest";
 
 // TODO: export from @enrouter/web
-type CreateSsrHandler = (manifest?: ViteManifest) => (
-  req: Request,
-  ctx: {
-    isBot: boolean;
-  },
-) => Promise<Response>;
+type CreateSsrHandler = (
+  manifest?: ViteManifest,
+  isProd?: boolean,
+) => (req: Request, ctx: { isBot: boolean }) => Promise<Response>;
 
 const createSsrHandler = _createSsrHandler as CreateSsrHandler;
 
-const ssrHandler = createSsrHandler(manifest);
+const ssrHandler = createSsrHandler(manifest, true);
 
 export default {
   async fetch(req, env, ctx): Promise<Response> {

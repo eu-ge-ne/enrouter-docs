@@ -1,25 +1,30 @@
 //@ts-ignore
 import { renderToReadableStream } from "react-dom/server.edge";
-import * as enrouter from "enrouter";
+import {
+  type Match,
+  type Route,
+  debug,
+  matchLocation,
+  StaticRouter,
+} from "enrouter";
 import { type ViteManifest, getModuleAssets } from "enrouter/vite/manifest";
 
 import { log } from "#log.js";
 import { Shell } from "./shell.js";
 
-export default createSsrHandler;
-
-enrouter.debug(console.debug);
-
 const mapAssetUrl = (x: string) => new URL(x, "http://localhost").pathname;
 
-interface SsrHandlerCtx {
-  isBot: boolean;
-}
+export default function createSsrHandler(
+  manifest?: ViteManifest,
+  isProd?: boolean,
+) {
+  if (!isProd) {
+    debug(console.debug);
+  }
 
-function createSsrHandler(manifest: ViteManifest) {
   return async function handleSsrRequest(
     req: Request,
-    { isBot }: SsrHandlerCtx,
+    { isBot }: { isBot: boolean },
   ) {
     let status = 200;
 
@@ -29,7 +34,7 @@ function createSsrHandler(manifest: ViteManifest) {
 
       const location = new URL(req.url, "http://localhost").pathname;
 
-      const match = await enrouter.matchLocation(location);
+      const match = await matchLocation(location);
       if (!match?.last?.isExact) {
         status = 404;
       }
@@ -43,9 +48,7 @@ function createSsrHandler(manifest: ViteManifest) {
           moduleId: "src/main.tsx",
         });
 
-        const collectModules: (
-          x?: enrouter.Match,
-        ) => enrouter.Route["modules"] = (x) =>
+        const collectModules: (x?: Match) => Route["modules"] = (x) =>
           !x ? [] : [...x.route.modules, ...collectModules(x.next)];
 
         const modules = [...new Set(collectModules(match))];
@@ -78,7 +81,7 @@ function createSsrHandler(manifest: ViteManifest) {
 
       const children = (
         <Shell styles={bootstrapStyles}>
-          <enrouter.StaticRouter location={location} match={match} />
+          <StaticRouter location={location} match={match} />
         </Shell>
       );
 

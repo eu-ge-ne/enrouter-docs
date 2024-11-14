@@ -14,12 +14,10 @@ const SSR_PATH = resolve(WEB_PATH, "src/ssr.tsx");
 const PORT = 8000;
 
 // TODO: export from @enrouter/web
-type CreateSsrHandler = (manifest?: ViteManifest) => (
-  req: Request,
-  ctx: {
-    isBot: boolean;
-  },
-) => Promise<Response>;
+type CreateSsrHandler = (
+  manifest?: ViteManifest,
+  isProd?: boolean,
+) => (req: Request, ctx: { isBot: boolean }) => Promise<Response>;
 
 const app = express();
 
