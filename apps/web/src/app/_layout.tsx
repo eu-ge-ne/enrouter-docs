@@ -12,7 +12,7 @@ function Root() {
   log("Rendering: /_layout");
 
   return (
-    <div className="flex flex-col divide-y divide-appBorder">
+    <>
       <div className="container mx-auto flex items-center justify-between p-4">
         <a className="text-2xl font-medium tracking-wider" {...useLink("/")}>
           enrouter
@@ -33,7 +33,7 @@ function Root() {
           <Outlet />
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
