@@ -1,16 +1,11 @@
 //@ts-ignore
 import { renderToReadableStream } from "react-dom/server.edge";
-import {
-  type Match,
-  type Route,
-  debug,
-  matchLocation,
-  StaticRouter,
-} from "enrouter";
+import { debug, matchLocation, StaticRouter } from "enrouter";
 import { type ViteManifest, getModuleAssets } from "enrouter/vite/manifest";
 
 import { log } from "#log.js";
 import { Shell } from "./shell.js";
+import { Root } from "./app/root.js";
 
 const mapAssetUrl = (x: string) => new URL(x, "http://localhost").pathname;
 
@@ -78,7 +73,7 @@ export default function createSsrHandler(
 
       const children = (
         <Shell styles={bootstrapStyles}>
-          <StaticRouter location={location} matches={matches} />
+          <StaticRouter root={<Root />} location={location} matches={matches} />
         </Shell>
       );
 

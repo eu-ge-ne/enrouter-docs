@@ -36,8 +36,8 @@ importers:
         specifier: ^22.9.0
         version: 22.9.0
       enrouter:
-        specifier: ^0.0.26
-        version: 0.0.26(react@19.0.0-rc-02c0e824-20241028)(vite@5.4.11(@types/node@22.9.0))
+        specifier: ^0.0.27
+        version: 0.0.27(react@19.0.0-rc-02c0e824-20241028)(vite@5.4.11(@types/node@22.9.0))
       express:
         specifier: ^5.0.1
         version: 5.0.1
@@ -66,8 +66,8 @@ importers:
         specifier: workspace:*
         version: link:../web
       enrouter:
-        specifier: ^0.0.26
-        version: 0.0.26(react@19.0.0-rc-02c0e824-20241028)(vite@5.4.11(@types/node@22.9.0))
+        specifier: ^0.0.27
+        version: 0.0.27(react@19.0.0-rc-02c0e824-20241028)(vite@5.4.11(@types/node@22.9.0))
       isbot:
         specifier: ^5.1.17
         version: 5.1.17
@@ -114,8 +114,8 @@ importers:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.49)
       enrouter:
-        specifier: ^0.0.26
-        version: 0.0.26(react@19.0.0-rc-02c0e824-20241028)(vite@5.4.11(@types/node@22.9.0))
+        specifier: ^0.0.27
+        version: 0.0.27(react@19.0.0-rc-02c0e824-20241028)(vite@5.4.11(@types/node@22.9.0))
       glob:
         specifier: ^11.0.0
         version: 11.0.0
@@ -1585,8 +1585,8 @@ packages:
     resolution: {integrity: sha512-Q0n9HRi4m6JuGIV1eFlmvJB7ZEVxu93IrMyiMsGC0lrMJMWzRgx6WGquyfQgZVb31vhGgXnfmPNNXmxnOkRBrg==}
     engines: {node: '>= 0.8'}
 
-  enrouter@0.0.26:
-    resolution: {integrity: sha512-1n9AIS94du7rB694TUdNo1pYnKRBzDAUxyUOAuu9n8PO2A5B7qfAeYI7fDWWzwEszsoF6Aqz2QngQXOeP4T7uw==}
+  enrouter@0.0.27:
+    resolution: {integrity: sha512-9y0v/qBomzXhDcCGa9M2sRwm6Y1SN+KAu6Kjag4zChb9unNH5DZssasr8jX3XIrK351HYqEhvfxu4s1WAHaNhw==}
     peerDependencies:
       react: ^18.3.1
       vite: ^5.4.11
@@ -4255,7 +4255,7 @@ snapshots:
 
   encodeurl@2.0.0: {}
 
-  enrouter@0.0.26(react@19.0.0-rc-02c0e824-20241028)(vite@5.4.11(@types/node@22.9.0)):
+  enrouter@0.0.27(react@19.0.0-rc-02c0e824-20241028)(vite@5.4.11(@types/node@22.9.0)):
     dependencies:
       react: 19.0.0-rc-02c0e824-20241028
       vite: 5.4.11(@types/node@22.9.0)
