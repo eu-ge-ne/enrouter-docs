@@ -14,12 +14,12 @@ declare const window: {
 async function main() {
   log("Hydrating DOM");
 
-  const match = await enrouter.matchLocation(window.location.pathname);
+  const matches = await enrouter.matchLocation(window.location.pathname);
 
   hydrateRoot(
     document,
     <Shell>
-      <enrouter.BrowserRouter match={match} />
+      <enrouter.BrowserRouter matches={matches} />
     </Shell>,
   );
 

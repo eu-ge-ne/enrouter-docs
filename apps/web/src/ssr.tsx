@@ -34,8 +34,8 @@ export default function createSsrHandler(
 
       const location = new URL(req.url, "http://localhost").pathname;
 
-      const match = await matchLocation(location);
-      if (!match?.last?.isExact) {
+      const matches = await matchLocation(location);
+      if (!matches.at(-1)?.isExact) {
         status = 404;
       }
 
@@ -48,10 +48,13 @@ export default function createSsrHandler(
           moduleId: "src/main.tsx",
         });
 
+        /*
         const collectModules: (x?: Match) => Route["modules"] = (x) =>
           !x ? [] : [...x.route.modules, ...collectModules(x.next)];
-
         const modules = [...new Set(collectModules(match))];
+        */
+        // TODO: dedupe
+        const modules = matches.flatMap((x) => x.route.modules);
 
         const matchedAssets = modules.map((x) =>
           getModuleAssets({
@@ -81,7 +84,7 @@ export default function createSsrHandler(
 
       const children = (
         <Shell styles={bootstrapStyles}>
-          <StaticRouter location={location} match={match} />
+          <StaticRouter location={location} matches={matches} />
         </Shell>
       );
 
