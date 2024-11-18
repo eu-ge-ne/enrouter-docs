@@ -48,20 +48,14 @@ export default function createSsrHandler(
           moduleId: "src/main.tsx",
         });
 
-        /*
-        const collectModules: (x?: Match) => Route["modules"] = (x) =>
-          !x ? [] : [...x.route.modules, ...collectModules(x.next)];
-        const modules = [...new Set(collectModules(match))];
-        */
-        // TODO: dedupe
-        const modules = matches.flatMap((x) => x.route.modules);
-
-        const matchedAssets = modules.map((x) =>
-          getModuleAssets({
-            manifest,
-            moduleId: x.id,
-          }),
-        );
+        const matchedAssets = matches
+          .flatMap((x) => x.route.modules)
+          .map((x) =>
+            getModuleAssets({
+              manifest,
+              moduleId: x.id,
+            }),
+          );
 
         const assets = [entryAssets, ...matchedAssets].filter(
           (x) => x !== undefined,
