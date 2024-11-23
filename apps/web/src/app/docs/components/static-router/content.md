@@ -15,9 +15,17 @@ or at the edge.
 
 It accepts the following props:
 
-- `root`: An optional root element to wrap the rendered application.
-- `location`: The current URL location to resolve routes.
-- `matches`: An array of matched routes for the given location.
+- `root`
+
+  An optional root element to wrap the rendered application.
+
+- `location`
+
+  The current URL location to resolve routes.
+
+- `matches`
+
+  An array of matched routes for the given location.
 
 ## Example
 
