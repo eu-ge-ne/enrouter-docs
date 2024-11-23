@@ -2,8 +2,9 @@
 
 ```ts
 interface StaticRouterProps {
+  root?: ReactElement;
   location: string;
-  match: Match | undefined;
+  matches: Match[];
 }
 
 function StaticRouter(props: StaticRouterProps): ReactNode;
@@ -11,7 +12,7 @@ function StaticRouter(props: StaticRouterProps): ReactNode;
 
 Renders application in Node.js or on the edge.
 
-Accepts current location and matched routes.
+Accepts root element, current location and matched routes.
 
 ## Example
 
@@ -23,7 +24,7 @@ export default {
     const match = await matchLocation(req.url);
 
     const stream = await renderToReadableStream(
-      <StaticRouter location={req.url} match={match} />,
+      <StaticRouter location={req.url} matches={matches} />,
     );
 
     return new Response(stream, {
