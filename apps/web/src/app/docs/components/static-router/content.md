@@ -10,9 +10,14 @@ interface StaticRouterProps {
 function StaticRouter(props: StaticRouterProps): ReactNode;
 ```
 
-Renders application in Node.js or on the edge.
+The `StaticRouter` component renders your application in a Node.js environment
+or at the edge.
 
-Accepts root element, current location and matched routes.
+It accepts the following props:
+
+- `root`: An optional root element to wrap the rendered application.
+-	`location`: The current URL location to resolve routes.
+-	`matches`: An array of matched routes for the given location.
 
 ## Example
 
