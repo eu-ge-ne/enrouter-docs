@@ -8,30 +8,36 @@ interface OutletProps {
 function Outlet(props: OutletProps): ReactNode;
 ```
 
-The `Outlet` component is used to render elements from the next (or current)
-matching route.
-
-Outlets can be used only in `_layout` modules.
+The `Outlet` component renders elements from the next (or current) matching
+route.
+It is specifically designed to be used **only** in `_layout` modules.
 
 ## Props
 
 - `name`
 
-  An optional name of component to render.
+  The name of the component to render.
 
-  - If provided, a component with that name is rendered.
-  - If not provided, a first component from object entries is rendered.
+  - If provided, renders the component with the specified name.
+  - If not provided, renders the first component from the exported object
+    entries.
 
 ## Rendering behavior
 
-Rendering behavior depends on current route match:
+The behavior of `<Outlet />` depends on the current route match:
 
-- If match is not exact, elements from next matching route are rendered
-- If match is exact, elements from current matching route's `_content` module
-  are rendered.
+- Non-exact match
 
-`_layout.tsx`, `_content.tsx`, `_void.tsx` modules can export multiple
-components. Therefore, `<Outlet />` accepts `name` prop:
+  Renders elements from the next matching route.
+
+- Exact match:
+
+  Renders elements from the current matching route’s `_content` module.
+
+Modules such as `_layout.tsx`, `_content.tsx`, and `_void.tsx` can export
+multiple components.
+To handle this, the `<Outlet />` component uses the name prop to determine
+which component to render.
 
 ## Examples
 
