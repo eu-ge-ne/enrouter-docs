@@ -13,7 +13,7 @@ function StaticRouter(props: StaticRouterProps): ReactNode;
 The `StaticRouter` component renders your application in a Node.js environment
 or at the edge.
 
-It accepts the following props:
+## Props
 
 - `root`
 
