@@ -2,22 +2,32 @@
 
 ```ts
 interface BrowserRouterProps {
-  match: Match | undefined;
+  root?: ReactElement;
+  matches: Match[];
 }
 
 function BrowserRouter(props: BrowserRouterProps): ReactNode;
 ```
 
-Renders application in browser.
+The `BrowserRouter` component is used to render your application in a browser
+environment.
 
-Accepts matched routes in props.
+## Props
+
+- `root`
+
+  An optional root element to wrap the rendered application.
+
+- `matches`
+
+  An array of matched routes for the given location.
 
 ## Example
 
 ```tsx
 import { matchLocation, BrowserRouter } from "enrouter";
 
-const match = await matchLocation(window.location.pathname);
+const matches = await matchLocation(window.location.pathname);
 
-hydrateRoot(document, <BrowserRouter match={match} />);
+hydrateRoot(document, <BrowserRouter matches={matches} />);
 ```

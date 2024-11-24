@@ -17,7 +17,7 @@
     "@enrouter/web": "workspace:*",
     "enrouter": "^0.0.27",
     "isbot": "^5.1.17",
-    "typescript": "^5.6.3",
-    "wrangler": "^3.87.0"
+    "typescript": "^5.7.2",
+    "wrangler": "^3.90.0"
   }
 }
