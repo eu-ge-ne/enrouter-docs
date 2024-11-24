@@ -34,7 +34,7 @@ import { matchLocation, StaticRouter } from "enrouter";
 
 export default {
   async fetch(req, env, ctx): Promise<Response> {
-    const match = await matchLocation(req.url);
+    const matches = await matchLocation(req.url);
 
     const stream = await renderToReadableStream(
       <StaticRouter location={req.url} matches={matches} />,

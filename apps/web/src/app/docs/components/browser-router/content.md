@@ -2,7 +2,8 @@
 
 ```ts
 interface BrowserRouterProps {
-  match: Match | undefined;
+  root?: ReactElement;
+  matches: Match[];
 }
 
 function BrowserRouter(props: BrowserRouterProps): ReactNode;
@@ -17,7 +18,7 @@ Accepts matched routes in props.
 ```tsx
 import { matchLocation, BrowserRouter } from "enrouter";
 
-const match = await matchLocation(window.location.pathname);
+const matches = await matchLocation(window.location.pathname);
 
-hydrateRoot(document, <BrowserRouter match={match} />);
+hydrateRoot(document, <BrowserRouter matches={matches} />);
 ```
