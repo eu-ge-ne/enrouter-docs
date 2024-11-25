@@ -29,7 +29,7 @@ Indeed, we need a home page containing links to both pages.
 ## Install enrouter
 
 ```bash
-pnpm add -D enrouter
+pnpm add enrouter
 ```
 
 Add `enrouter` plugin to your `vite.config.ts`:
