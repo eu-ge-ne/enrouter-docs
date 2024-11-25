@@ -1,23 +1,29 @@
 # Routes
 
-In application routes are defined by a tree of folders and files.
-Any route consists of:
+In the application, routes are defined using a tree structure of folders and
+files.
+Each route comprises:
 
-- Folder (e.g. `src/app/about`).
-  Name of the folder defines url pattern of the route.
+1. **Folders** (e.g., `src/app/about`)
 
-- Files inside the folder (e.g. `src/app/about/_layout.tsx`,
-  `src/app/about/_content.tsx`, etc.).
-  They define content rendered when the route is matched.
-  Following files define corresponding aspects of the route:
+   The folder name determines the URL pattern of the route.
 
-  - [\_layout.tsx](/docs/routes/_layout) - content layout.
-  - [\_content.tsx](/docs/routes/_content) - route's content.
-  - [\_void.tsx](/docs/routes/_content) - content, rendered in "not found" case.
+2. **Files within folders** (e.g., `src/app/about/_layout.tsx`,
+   `src/app/about/_content.tsx`)
 
-Route's content is nested and wrapped recursively in parent content.
+   These files define the content rendered when the route is matched.
+   The following files serve specific purposes:
 
-For example, this folder layout:
+   - [\_layout.tsx](/docs/routes/_layout): Defines the layout for the route.
+   - [\_content.tsx](/docs/routes/_content): Specifies the route's content.
+   - [\_void.tsx](/docs/routes/_void): Content rendered for "not found" cases.
+
+Content is **nested** and recursively wrapped in the layout and content of its
+parent routes.
+
+## Example
+
+For this folder structure:
 
 ```mermaid
 graph TB
@@ -57,7 +63,7 @@ graph TB
   api-layout --> api-content
 ```
 
-Defines these routes:
+The following routes are generated:
 
 ```mermaid
 graph TB
@@ -70,3 +76,10 @@ graph TB
   root --> docs
   docs --> api
 ```
+
+- The root route `/` is defined by `src/app/\_layout.tsx` and
+  `src/app/\_content.tsx`.
+- The `/about` route inherits its structure from `src/app/about/\_layout.tsx`
+  and `src/app/about/\_content.tsx`.
+- Nested routes like `/docs/api` inherit and extend their parent routes, using
+  their respective `\_layout.tsx` and `\_content.tsx` files.
