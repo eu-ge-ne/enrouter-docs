@@ -28,6 +28,11 @@ export default defineConfig({
       entry: "src/ssr.tsx",
       formats: ["es"],
     },
+    rollupOptions: {
+      output: {
+        inlineDynamicImports: false,
+      },
+    },
     ssr: true,
     sourcemap: true,
     copyPublicDir: false,

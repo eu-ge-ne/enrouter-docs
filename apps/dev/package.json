@@ -12,12 +12,12 @@
     "@enrouter/web": "workspace:*",
     "@types/express": "^5.0.0",
     "@types/morgan": "^1.9.9",
-    "@types/node": "^22.9.3",
-    "enrouter": "^0.0.27",
+    "@types/node": "^22.10.0",
+    "enrouter": "^0.0.29",
     "express": "^5.0.1",
     "morgan": "^1.10.0",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2",
-    "vite": "^5.4.11"
+    "vite": "^6.0.0"
   }
 }
