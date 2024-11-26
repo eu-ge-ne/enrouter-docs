@@ -36,8 +36,8 @@ importers:
         specifier: ^22.10.0
         version: 22.10.0
       enrouter:
-        specifier: ^0.0.28
-        version: 0.0.28(react@19.0.0-rc-02c0e824-20241028)(vite@6.0.0(@types/node@22.10.0)(jiti@1.21.6)(tsx@4.19.2)(yaml@2.6.0))
+        specifier: ^0.0.29
+        version: 0.0.29(react@19.0.0-rc-02c0e824-20241028)(vite@6.0.0(@types/node@22.10.0)(jiti@1.21.6)(tsx@4.19.2)(yaml@2.6.0))
       express:
         specifier: ^5.0.1
         version: 5.0.1
@@ -66,8 +66,8 @@ importers:
         specifier: workspace:*
         version: link:../web
       enrouter:
-        specifier: ^0.0.28
-        version: 0.0.28(react@19.0.0-rc-02c0e824-20241028)(vite@6.0.0(@types/node@22.10.0)(jiti@1.21.6)(tsx@4.19.2)(yaml@2.6.0))
+        specifier: ^0.0.29
+        version: 0.0.29(react@19.0.0-rc-02c0e824-20241028)(vite@6.0.0(@types/node@22.10.0)(jiti@1.21.6)(tsx@4.19.2)(yaml@2.6.0))
       isbot:
         specifier: ^5.1.17
         version: 5.1.17
@@ -114,8 +114,8 @@ importers:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.49)
       enrouter:
-        specifier: ^0.0.28
-        version: link:../../../enrouter
+        specifier: ^0.0.29
+        version: 0.0.29(react@19.0.0-rc-02c0e824-20241028)(vite@6.0.0(@types/node@22.10.0)(jiti@1.21.6)(tsx@4.19.2)(yaml@2.6.0))
       glob:
         specifier: ^11.0.0
         version: 11.0.0
@@ -1591,11 +1591,11 @@ packages:
     resolution: {integrity: sha512-Q0n9HRi4m6JuGIV1eFlmvJB7ZEVxu93IrMyiMsGC0lrMJMWzRgx6WGquyfQgZVb31vhGgXnfmPNNXmxnOkRBrg==}
     engines: {node: '>= 0.8'}
 
-  enrouter@0.0.28:
-    resolution: {integrity: sha512-sFh8wmoczcWlkRB+QL1W89/hi8awXbjgBYS3Jg8nEk0UHtjO/MrFr8nZw52LWHKx+IA5cF11lURX6MN9bo5MhQ==}
+  enrouter@0.0.29:
+    resolution: {integrity: sha512-lDChbaM02J3kQkgBM2308D65E+YVZdoI8jIZ1unQFsYxnPm1/pdIuF1dbfXhfK5prl7boS2Cj1ZhY77ltRXbrg==}
     peerDependencies:
-      react: ^18.3.1
-      vite: ^5.4.11
+      react: ^18
+      vite: ^6
 
   es-define-property@1.0.0:
     resolution: {integrity: sha512-jxayLKShrEqqzJ0eumQbVhTYQM27CfT1T35+gCgDFoL82JLsXqTJ76zv6A0YLOgEnLUMvLzsDsGIrl8NFpT2gQ==}
@@ -4273,7 +4273,7 @@ snapshots:
 
   encodeurl@2.0.0: {}
 
-  enrouter@0.0.28(react@19.0.0-rc-02c0e824-20241028)(vite@6.0.0(@types/node@22.10.0)(jiti@1.21.6)(tsx@4.19.2)(yaml@2.6.0)):
+  enrouter@0.0.29(react@19.0.0-rc-02c0e824-20241028)(vite@6.0.0(@types/node@22.10.0)(jiti@1.21.6)(tsx@4.19.2)(yaml@2.6.0)):
     dependencies:
       react: 19.0.0-rc-02c0e824-20241028
       vite: 6.0.0(@types/node@22.10.0)(jiti@1.21.6)(tsx@4.19.2)(yaml@2.6.0)
