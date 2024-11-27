@@ -15,8 +15,8 @@ importers:
         specifier: ^0.6.9
         version: 0.6.9(prettier@3.4.1)
       turbo:
-        specifier: ^2.3.2
-        version: 2.3.2
+        specifier: ^2.3.3
+        version: 2.3.3
 
   apps/dev:
     devDependencies:
@@ -36,8 +36,8 @@ importers:
         specifier: ^22.10.0
         version: 22.10.0
       enrouter:
-        specifier: ^0.0.29
-        version: 0.0.29(react@19.0.0-rc-02c0e824-20241028)(vite@6.0.0(@types/node@22.10.0)(jiti@1.21.6)(tsx@4.19.2)(yaml@2.6.0))
+        specifier: ^0.0.30
+        version: 0.0.30(react@19.0.0-rc-02c0e824-20241028)(vite@6.0.0(@types/node@22.10.0)(jiti@1.21.6)(tsx@4.19.2)(yaml@2.6.0))
       express:
         specifier: ^5.0.1
         version: 5.0.1
@@ -66,8 +66,8 @@ importers:
         specifier: workspace:*
         version: link:../web
       enrouter:
-        specifier: ^0.0.29
-        version: 0.0.29(react@19.0.0-rc-02c0e824-20241028)(vite@6.0.0(@types/node@22.10.0)(jiti@1.21.6)(tsx@4.19.2)(yaml@2.6.0))
+        specifier: ^0.0.30
+        version: 0.0.30(react@19.0.0-rc-02c0e824-20241028)(vite@6.0.0(@types/node@22.10.0)(jiti@1.21.6)(tsx@4.19.2)(yaml@2.6.0))
       isbot:
         specifier: ^5.1.17
         version: 5.1.17
@@ -114,8 +114,8 @@ importers:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.49)
       enrouter:
-        specifier: ^0.0.29
-        version: 0.0.29(react@19.0.0-rc-02c0e824-20241028)(vite@6.0.0(@types/node@22.10.0)(jiti@1.21.6)(tsx@4.19.2)(yaml@2.6.0))
+        specifier: ^0.0.30
+        version: 0.0.30(react@19.0.0-rc-02c0e824-20241028)(vite@6.0.0(@types/node@22.10.0)(jiti@1.21.6)(tsx@4.19.2)(yaml@2.6.0))
       glob:
         specifier: ^11.0.0
         version: 11.0.0
@@ -1591,10 +1591,10 @@ packages:
     resolution: {integrity: sha512-Q0n9HRi4m6JuGIV1eFlmvJB7ZEVxu93IrMyiMsGC0lrMJMWzRgx6WGquyfQgZVb31vhGgXnfmPNNXmxnOkRBrg==}
     engines: {node: '>= 0.8'}
 
-  enrouter@0.0.29:
-    resolution: {integrity: sha512-lDChbaM02J3kQkgBM2308D65E+YVZdoI8jIZ1unQFsYxnPm1/pdIuF1dbfXhfK5prl7boS2Cj1ZhY77ltRXbrg==}
+  enrouter@0.0.30:
+    resolution: {integrity: sha512-TG+tpV7IivHP9ONQ9UE24ulrrLmrudZAlk8qrxEYe7uylPRo7LMcPvPd2wd9psvJg5Ab4Qfd7VDQIJTVWLhjxA==}
     peerDependencies:
-      react: ^18
+      react: '>=18'
       vite: ^6
 
   es-define-property@1.0.0:
@@ -2744,38 +2744,38 @@ packages:
     engines: {node: '>=18.0.0'}
     hasBin: true
 
-  turbo-darwin-64@2.3.2:
-    resolution: {integrity: sha512-B1lS/UqjXNsG+kx1uzJNwXMuw2i5wavcyNy8opvSLjfuECdsqQU9B1wPqkSTU+mZjFTJcEfiGKyJ/I2EVk8vdw==}
+  turbo-darwin-64@2.3.3:
+    resolution: {integrity: sha512-bxX82xe6du/3rPmm4aCC5RdEilIN99VUld4HkFQuw+mvFg6darNBuQxyWSHZTtc25XgYjQrjsV05888w1grpaA==}
     cpu: [x64]
     os: [darwin]
 
-  turbo-darwin-arm64@2.3.2:
-    resolution: {integrity: sha512-XHeuEdk9tHaw2Bsr3rTzFtZyldeSyagDZkOSPIJ1zioavMjWEFPA75vdgy4j8ns96EBpZMaPXVEnODuEHfiZfQ==}
+  turbo-darwin-arm64@2.3.3:
+    resolution: {integrity: sha512-DYbQwa3NsAuWkCUYVzfOUBbSUBVQzH5HWUFy2Kgi3fGjIWVZOFk86ss+xsWu//rlEAfYwEmopigsPYSmW4X15A==}
     cpu: [arm64]
     os: [darwin]
 
-  turbo-linux-64@2.3.2:
-    resolution: {integrity: sha512-oKDsO5+flqpPx5tNLFGVUYpJ/sBc3KvaGpyNzXl2u3epzyafgblFKWMG5YsSiU1ruouPpcC6YG5SN5chA7Abfg==}
+  turbo-linux-64@2.3.3:
+    resolution: {integrity: sha512-eHj9OIB0dFaP6BxB88jSuaCLsOQSYWBgmhy2ErCu6D2GG6xW3b6e2UWHl/1Ho9FsTg4uVgo4DB9wGsKa5erjUA==}
     cpu: [x64]
     os: [linux]
 
-  turbo-linux-arm64@2.3.2:
-    resolution: {integrity: sha512-luyvTl3wQ1hF+ljK7ljH4TL7rg4pmx5pQ2mzvfMvPo5eaLuKr/tImmbdH6/vr56iffUIISkIsLVhVxgZeAsUOw==}
+  turbo-linux-arm64@2.3.3:
+    resolution: {integrity: sha512-NmDE/NjZoDj1UWBhMtOPmqFLEBKhzGS61KObfrDEbXvU3lekwHeoPvAMfcovzswzch+kN2DrtbNIlz+/rp8OCg==}
     cpu: [arm64]
     os: [linux]
 
-  turbo-windows-64@2.3.2:
-    resolution: {integrity: sha512-yw7BnTU5cE7GdUnZEW3jIAI98hh4dcWk+Jwza8X7CXpxpill2zteq7VPf+a/B3o/xm+oVXzLmP83YP91Bm0SaA==}
+  turbo-windows-64@2.3.3:
+    resolution: {integrity: sha512-O2+BS4QqjK3dOERscXqv7N2GXNcqHr9hXumkMxDj/oGx9oCatIwnnwx34UmzodloSnJpgSqjl8iRWiY65SmYoQ==}
     cpu: [x64]
     os: [win32]
 
-  turbo-windows-arm64@2.3.2:
-    resolution: {integrity: sha512-Hgp6V7jaIYlDcy5xpKN+XXyYCf5afT690GmXcEsMoUawd5dStvZe0QHWcGxuqho497BAlx0XGAWftm0KelNePA==}
+  turbo-windows-arm64@2.3.3:
+    resolution: {integrity: sha512-dW4ZK1r6XLPNYLIKjC4o87HxYidtRRcBeo/hZ9Wng2XM/MqqYkAyzJXJGgRMsc0MMEN9z4+ZIfnSNBrA0b08ag==}
     cpu: [arm64]
     os: [win32]
 
-  turbo@2.3.2:
-    resolution: {integrity: sha512-vCJPoy8/3KkqY3W0cX2nrwhmtBQSZhEyrVgeJ4NlEXwGxu5vNRQDyV6se5VVAQMwfBsBJswlo87B7ai7Dr1MpQ==}
+  turbo@2.3.3:
+    resolution: {integrity: sha512-DUHWQAcC8BTiUZDRzAYGvpSpGLiaOQPfYXlCieQbwUvmml/LRGIe3raKdrOPOoiX0DYlzxs2nH6BoWJoZrj8hA==}
     hasBin: true
 
   type-is@1.6.18:
@@ -4273,7 +4273,7 @@ snapshots:
 
   encodeurl@2.0.0: {}
 
-  enrouter@0.0.29(react@19.0.0-rc-02c0e824-20241028)(vite@6.0.0(@types/node@22.10.0)(jiti@1.21.6)(tsx@4.19.2)(yaml@2.6.0)):
+  enrouter@0.0.30(react@19.0.0-rc-02c0e824-20241028)(vite@6.0.0(@types/node@22.10.0)(jiti@1.21.6)(tsx@4.19.2)(yaml@2.6.0)):
     dependencies:
       react: 19.0.0-rc-02c0e824-20241028
       vite: 6.0.0(@types/node@22.10.0)(jiti@1.21.6)(tsx@4.19.2)(yaml@2.6.0)
@@ -5850,32 +5850,32 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  turbo-darwin-64@2.3.2:
+  turbo-darwin-64@2.3.3:
     optional: true
 
-  turbo-darwin-arm64@2.3.2:
+  turbo-darwin-arm64@2.3.3:
     optional: true
 
-  turbo-linux-64@2.3.2:
+  turbo-linux-64@2.3.3:
     optional: true
 
-  turbo-linux-arm64@2.3.2:
+  turbo-linux-arm64@2.3.3:
     optional: true
 
-  turbo-windows-64@2.3.2:
+  turbo-windows-64@2.3.3:
     optional: true
 
-  turbo-windows-arm64@2.3.2:
+  turbo-windows-arm64@2.3.3:
     optional: true
 
-  turbo@2.3.2:
+  turbo@2.3.3:
     optionalDependencies:
-      turbo-darwin-64: 2.3.2
-      turbo-darwin-arm64: 2.3.2
-      turbo-linux-64: 2.3.2
-      turbo-linux-arm64: 2.3.2
-      turbo-windows-64: 2.3.2
-      turbo-windows-arm64: 2.3.2
+      turbo-darwin-64: 2.3.3
+      turbo-darwin-arm64: 2.3.3
+      turbo-linux-64: 2.3.3
+      turbo-linux-arm64: 2.3.3
+      turbo-windows-64: 2.3.3
+      turbo-windows-arm64: 2.3.3
 
   type-is@1.6.18:
     dependencies:
