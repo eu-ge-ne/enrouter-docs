@@ -2,7 +2,8 @@
 
 ```ts
 interface BrowserRouterProps {
-  root?: ReactElement;
+  root?: ComponentType;
+  void?: Record<string, ComponentType>;
   matches: Match[];
 }
 

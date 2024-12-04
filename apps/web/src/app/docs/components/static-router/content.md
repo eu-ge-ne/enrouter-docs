@@ -2,7 +2,8 @@
 
 ```ts
 interface StaticRouterProps {
-  root?: ReactElement;
+  root?: ComponentType;
+  void?: Record<string, ComponentType>;
   location: string;
   matches: Match[];
 }
