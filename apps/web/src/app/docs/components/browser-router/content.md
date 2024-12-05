@@ -2,25 +2,22 @@
 
 ```ts
 interface BrowserRouterProps {
-  root?: ReactElement;
+  root?: ComponentType;
+  void?: Record<string, ComponentType>;
   matches: Match[];
 }
 
 function BrowserRouter(props: BrowserRouterProps): ReactNode;
 ```
 
-The `BrowserRouter` component is used to render your application in a browser
-environment.
+The `BrowserRouter` component is used to render your application in a browser environment,
+enabling client-side navigation based on precomputed route matches.
 
 ## Props
 
-- `root`
-
-  An optional root element to wrap the rendered application.
-
-- `matches`
-
-  An array of matched routes for the given location.
+- `root` (optional): A custom root component that wraps the rendered application, useful for applying shared context or layout.
+- `void` (optional): A record of placeholder components, keyed by route names, to handle specific scenarios (e.g., missing content).
+- `matches` (required): An array of Match objects representing the routes matched for the current browser location.
 
 ## Example
 

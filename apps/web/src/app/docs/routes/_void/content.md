@@ -1,10 +1,10 @@
 # \_void.tsx
 
-Module exporting void components which are rendered by
+The `\_void.tsx` module defines **void components** that are rendered by
 [Outlets](/docs/components/outlet).
 
-By convention, void modules must `export default` object with components.
+Void modules must `export default` an object containing the void components.
 
-Outlets select components for rendering by name.
-Keys of exported object are the names of components.
-They connect components to Outlets.
+Outlets dynamically select components for rendering based on their names.
+The keys in the exported object serve as component names, creating a connection
+between the components and the corresponding Outlets.

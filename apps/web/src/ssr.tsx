@@ -6,6 +6,7 @@ import { type ViteManifest, getModuleAssets } from "enrouter/vite/manifest";
 import { log } from "#log.js";
 import { Shell } from "./shell.js";
 import { Root } from "./app/root.js";
+import Void from "./app/void.js";
 
 const mapAssetUrl = (x: string) => new URL(x, "http://localhost").pathname;
 
@@ -73,7 +74,12 @@ export default function createSsrHandler(
 
       const children = (
         <Shell styles={bootstrapStyles}>
-          <StaticRouter root={<Root />} location={location} matches={matches} />
+          <StaticRouter
+            root={Root}
+            void={Void}
+            location={location}
+            matches={matches}
+          />
         </Shell>
       );
 
