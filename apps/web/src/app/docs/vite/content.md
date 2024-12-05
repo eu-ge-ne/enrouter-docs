@@ -2,15 +2,16 @@
 
 ## Plugin
 
-enrouter comes with Vite plugin for generating routes from file system.
+enrouter includes a Vite plugin that automatically generates routes based on your file system structure.
 
-Accepts `path` parameter - a folder with route modules.
+### Configuration
 
-In development or when building production bundle it:
+The plugin accepts a single parameter `path`, which specifies the directory containing your route modules.
+During development or production builds, the plugin:
 
-- looks into the folder at `path`
-- organizes modules into the tree of routes
-- creates adhoc virtual module exporting routes
+1. Scans the specified folder (`path`) for route modules.
+2. Organizes these modules into a hierarchical route tree.
+3. Generates a virtual module on-the-fly that exports the routes for use in your application.
 
 ### Example
 
