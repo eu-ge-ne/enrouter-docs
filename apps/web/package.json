@@ -24,8 +24,8 @@
     "@types/mdx": "^2.0.13",
     "@types/node": "^22.10.1",
     "@types/prismjs": "^1.26.5",
-    "@types/react": "npm:types-react@rc",
-    "@types/react-dom": "npm:types-react-dom@rc",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
     "enrouter": "^0.0.31",
@@ -35,15 +35,11 @@
     "postcss": "^8.4.49",
     "prism-themes": "^1.9.0",
     "prismjs": "^1.29.0",
-    "react": "19.0.0-rc-02c0e824-20241028",
-    "react-dom": "19.0.0-rc-02c0e824-20241028",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "remark-gfm": "^4.0.0",
     "tailwindcss": "^3.4.16",
     "typescript": "^5.7.2",
-    "vite": "^6.0.2"
-  },
-  "overrides": {
-    "@types/react": "npm:types-react@rc",
-    "@types/react-dom": "npm:types-react-dom@rc"
+    "vite": "^6.0.3"
   }
 }
