@@ -31,7 +31,7 @@ export default function createSsrHandler(
       const location = new URL(req.url, "http://localhost").pathname;
 
       const matches = await matchLocation(location);
-      if (!matches.at(-1)?.isExact) {
+      if (!matches.at(-1)?.route) {
         status = 404;
       }
 
