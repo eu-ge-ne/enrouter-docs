@@ -1,10 +1,9 @@
 # useMatch
 
 ```ts
-function useMatch(path?: string): Match | undefined;
+function useMatch(path: string): Match | undefined;
 ```
 
-Returns `Match` object.
+Returns a `Match` object for the specified path.
 
-- If called with `path` argument, returns `Match` for corresponding location.
-- If no `path` argument was provided, returns `Match` for current location
+The `path` parameter specifies the location to match and is required.
