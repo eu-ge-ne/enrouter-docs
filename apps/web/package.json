@@ -28,7 +28,7 @@
     "@types/react-dom": "^19.0.2",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
-    "enrouter": "^0.0.33",
+    "enrouter": "^0.0.34",
     "glob": "^11.0.0",
     "globals": "^15.13.0",
     "mermaid": "^11.4.1",
