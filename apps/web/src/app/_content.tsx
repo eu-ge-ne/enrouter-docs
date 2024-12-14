@@ -19,11 +19,14 @@ function Content() {
         <p className="max-w-[30rem] text-center">
           Router library for React and a Vite plugin,
           <br />
-          enabling seamless file-based routing with support for "named outlets"
+          enabling seamless file-based routing
+          <br />
+          with support for "named outlets"
         </p>
         <p className="max-w-[30rem] text-center text-sm italic">
-          enrouter is still in its early development stages and not yet ready
-          for production.
+          enrouter is still in its early development stages
+          <br />
+          and not yet ready for production.
           <br />
           It's just beginning to take shape, so stay tuned for updates!
         </p>
