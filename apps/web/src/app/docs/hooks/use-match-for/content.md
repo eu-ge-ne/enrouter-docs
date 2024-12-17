@@ -1,7 +1,7 @@
-# useMatch
+# useMatchFor
 
 ```ts
-function useMatch(path: string): Match | undefined;
+function useMatchFor(path: string): Match | undefined;
 ```
 
 Returns a `Match` object for the specified path.

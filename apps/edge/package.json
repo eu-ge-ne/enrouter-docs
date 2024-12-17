@@ -15,7 +15,7 @@
     "@cloudflare/workers-types": "^4.20241216.0",
     "@enrouter/tsconfig": "workspace:*",
     "@enrouter/web": "workspace:*",
-    "enrouter": "^0.0.38",
+    "enrouter": "^0.0.39",
     "isbot": "^5.1.18",
     "typescript": "^5.7.2",
     "wrangler": "^3.96.0"
