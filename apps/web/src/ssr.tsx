@@ -33,6 +33,7 @@ export default function createSsrHandler(
       const matches = await matchLocation(location);
       if (!matches.at(-1)?.route) {
         status = 404;
+        matches.pop();
       }
 
       let bootstrapStyles: string[] = [];
