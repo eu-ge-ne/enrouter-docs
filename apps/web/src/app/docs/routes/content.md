@@ -1,7 +1,6 @@
 # Routes
 
-In the application, routes are defined using a tree structure of folders and
-files.
+In the application, routes are defined using a tree structure of folders and files.
 Each route comprises:
 
 1. **Folders** (e.g., `src/app/about`)
@@ -16,10 +15,9 @@ Each route comprises:
 
    - [\_layout.tsx](/docs/routes/_layout): Defines the layout for the route.
    - [\_content.tsx](/docs/routes/_content): Specifies the route's content.
-   - [\_void.tsx](/docs/routes/_void): Content rendered for "not found" cases.
+   - [\_fallback.tsx](/docs/routes/_fallback): Content rendered for "not found" cases.
 
-Content is **nested** and recursively wrapped in the layout and content of its
-parent routes.
+Content is **nested** and recursively wrapped in the layout and content of its parent routes.
 
 ## Example
 
@@ -77,9 +75,7 @@ graph TB
   docs --> api
 ```
 
-- The root route `/` is defined by `src/app/\_layout.tsx` and
-  `src/app/\_content.tsx`.
-- The `/about` route inherits its structure from `src/app/about/\_layout.tsx`
-  and `src/app/about/\_content.tsx`.
+- The root route `/` is defined by `src/app/\_layout.tsx` and `src/app/\_content.tsx`.
+- The `/about` route inherits its structure from `src/app/about/\_layout.tsx` and `src/app/about/\_content.tsx`.
 - Nested routes like `/docs/api` inherit and extend their parent routes, using
   their respective `\_layout.tsx` and `\_content.tsx` files.

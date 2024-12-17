@@ -1,6 +1,10 @@
 import { useLocation } from "enrouter";
 
-export function NotFound() {
+export default {
+  Docs: Fallback,
+};
+
+export function Fallback() {
   const location = useLocation();
 
   return (

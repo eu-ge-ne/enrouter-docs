@@ -14,7 +14,7 @@ function Menu() {
         <Link href="/docs/routes/match-location">matchLocation</Link>
         <Link href="/docs/routes/_content">_content.tsx</Link>
         <Link href="/docs/routes/_layout">_layout.tsx</Link>
-        <Link href="/docs/routes/_void">_void.tsx</Link>
+        <Link href="/docs/routes/_fallback">_fallback.tsx</Link>
       </ul>
     </div>
   );

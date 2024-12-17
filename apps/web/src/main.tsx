@@ -5,7 +5,7 @@ import "./index.css";
 import { log } from "#log.js";
 import { Shell } from "./shell.js";
 import { Root } from "./app/root.js";
-import Void from "./app/void.js";
+import Fallback from "./app/fallback.js";
 
 enrouter.debug(console.debug);
 
@@ -21,7 +21,11 @@ async function main() {
   hydrateRoot(
     document,
     <Shell>
-      <enrouter.BrowserRouter root={Root} void={Void} matches={matches} />
+      <enrouter.BrowserRouter
+        root={Root}
+        fallback={Fallback}
+        matches={matches}
+      />
     </Shell>,
   );
 

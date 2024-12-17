@@ -1,13 +1,13 @@
 export default {
-  Void,
+  Fallback,
 };
 
-function Void() {
+function Fallback() {
   return (
     <>
       <title>enrouter | Not Found</title>
       <meta name="description" content="File-based router library for React" />
-      Routes Not Found
+      Not Found
     </>
   );
 }

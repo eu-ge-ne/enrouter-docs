@@ -6,7 +6,7 @@ import { type ViteManifest, getModuleAssets } from "enrouter/vite/manifest";
 import { log } from "#log.js";
 import { Shell } from "./shell.js";
 import { Root } from "./app/root.js";
-import Void from "./app/void.js";
+import Fallback from "./app/fallback.js";
 
 const mapAssetUrl = (x: string) => new URL(x, "http://localhost").pathname;
 
@@ -33,6 +33,7 @@ export default function createSsrHandler(
       const matches = await matchLocation(location);
       if (!matches.at(-1)?.route) {
         status = 404;
+        matches.pop();
       }
 
       let bootstrapStyles: string[] = [];
@@ -76,7 +77,7 @@ export default function createSsrHandler(
         <Shell styles={bootstrapStyles}>
           <StaticRouter
             root={Root}
-            void={Void}
+            fallback={Fallback}
             location={location}
             matches={matches}
           />
