@@ -7,7 +7,7 @@ export default {
 function Docs() {
   return (
     <>
-      <title>enrouter docs | useMatch hook</title>
+      <title>enrouter docs | useMatchFor hook</title>
       <meta name="description" content="File-based router library for React" />
       <link rel="canonical" href="https://enrouter.dev/docs/hooks/use-match" />
       <Content />
