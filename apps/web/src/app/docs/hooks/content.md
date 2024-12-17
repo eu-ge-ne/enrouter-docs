@@ -3,6 +3,6 @@
 - [useActive](/docs/hooks/use-active)
 - [useLink](/docs/hooks/use-link)
 - [useLocation](/docs/hooks/use-location)
-- [useMatches](/docs/hooks/use-matches)
+- [useMatch](/docs/hooks/use-match)
 - [useMatchFor](/docs/hooks/use-match-for)
 - [useNavigate](/docs/hooks/use-navigate)
