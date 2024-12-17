@@ -47,7 +47,6 @@ React.hydrateRoot(document, <BrowserRouter matches={matches} />);
 ```ts
 interface Match {
   route: Route;
-  isExact: boolean;
   location: string;
   params: Record<string, string>;
 }
@@ -57,11 +56,8 @@ The `Match` object represents a route corresponding to a segment of the location
 It encapsulates:
 
 - `route`: The matched route instance.
-- `isExact`: A flag indicating if the match fully aligns with the location.
 - `location`: The matched location string.
 - `params`: An object containing the route parameters.
-
-Additionally, each `Match` object links to adjacent matches in the sequence (first, last, previous, and next).
 
 ### Example
 
@@ -74,4 +70,5 @@ For the location `/docs/api`, `matchLocation` generates a list of `Match` object
 ### Working with Matches
 
 You generally don’t need to work directly with `Match` objects.
-Instead, `enrouter` provides hooks like `useMatch` and `useActive` for convenient access to the match list and associated functionality.
+Instead, `enrouter` provides hooks like `useMatch` and `useActive` for convenient access to the match
+list and associated functionality.
