@@ -21,7 +21,11 @@ async function main() {
   hydrateRoot(
     document,
     <Shell>
-      <enrouter.BrowserRouter root={Root} fallback={Fallback} matches={matches} />
+      <enrouter.BrowserRouter
+        root={Root}
+        fallback={Fallback}
+        matches={matches}
+      />
     </Shell>,
   );
 
