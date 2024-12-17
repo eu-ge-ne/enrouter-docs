@@ -15,7 +15,7 @@ function Menu() {
         <Link href="/docs/hooks/use-link">useLink</Link>
         <Link href="/docs/hooks/use-location">useLocation</Link>
         <Link href="/docs/hooks/use-matches">useMatches</Link>
-        <Link href="/docs/hooks/use-match">useMatch</Link>
+        <Link href="/docs/hooks/use-match-for">useMatchFor</Link>
         <Link href="/docs/hooks/use-navigate">useNavigate</Link>
       </ul>
     </div>
