@@ -11,7 +11,7 @@ function Docs() {
       <meta name="description" content="File-based router library for React" />
       <link
         rel="canonical"
-        href="https://enrouter.dev/docs/hooks/use-matches"
+        href="https://enrouter.dev/docs/hooks/use-match"
       />
       <Content />
     </>
