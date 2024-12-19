@@ -4,7 +4,7 @@ import { useLocation, useLink } from "enrouter";
 
 export function Mdx({ children }: PropsWithChildren) {
   return (
-    <div className="prose prose-neutral prose-invert">
+    <div className="prose prose-neutral prose-invert max-w-[80ch]">
       <MDXProvider
         components={{
           a: ({ children, href }) => {
