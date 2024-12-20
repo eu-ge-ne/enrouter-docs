@@ -4,18 +4,24 @@
 function matchLocation(location: string): Promise<Match[]>;
 ```
 
-Generates a list of `Match` objects for a given location.
+Generates a list of [Match][1] objects for a given location.
 
 This function is the backbone of enrouter.
 It is invoked, either explicitly or implicitly, whenever you need to:
 
-- Render a server-side response (SSR)
-- Hydrate the user interface
-- Update the UI in response to link navigation
+- Render a server-side response (SSR).
+- Hydrate the user interface.
+- Update the UI in response to link navigation.
 
 ## Examples
 
-### SSR
+For the location `/docs/api`, `matchLocation` generates a list of [Match][1] objects corresponding to:
+
+1. `/`
+2. `/docs`
+3. `/docs/api`
+
+### Server-Side Rendering (SSR)
 
 ```tsx
 import { matchLocation, StaticRouter } from "enrouter";
@@ -32,7 +38,7 @@ return new Response(stream, {
 });
 ```
 
-### Hydrate
+### Hydration
 
 ```tsx
 import { matchLocation, BrowserRouter } from "enrouter";
@@ -42,33 +48,4 @@ const matches = await matchLocation(window.location.pathname);
 React.hydrateRoot(document, <BrowserRouter matches={matches} />);
 ```
 
-## Match Object
-
-```ts
-interface Match {
-  route: Route;
-  location: string;
-  params: Record<string, string>;
-}
-```
-
-The `Match` object represents a route corresponding to a segment of the location.
-It encapsulates:
-
-- `route`: The matched route instance.
-- `location`: The matched location string.
-- `params`: An object containing the route parameters.
-
-### Example
-
-For the location `/docs/api`, `matchLocation` generates a list of `Match` objects corresponding to:
-
-1. /
-2. /docs
-3. /docs/api
-
-### Working with Matches
-
-You generally don’t need to work directly with `Match` objects.
-Instead, `enrouter` provides hooks like `useMatch` and `useActive` for convenient access to the match
-list and associated functionality.
+[1]: /docs/routes/match
