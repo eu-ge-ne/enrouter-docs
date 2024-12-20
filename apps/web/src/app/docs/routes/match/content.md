@@ -15,7 +15,7 @@ It encapsulates the following:
 -	`params`: An object containing the route parameters.
 
 You generally don’t need to interact directly with `Match` objects.
-Instead, `enrouter` provides hooks like [useMatch][1], [useMatchFor][2], and [useActive][3]
+Instead, enrouter provides hooks like [useMatch][1], [useMatchFor][2], and [useActive][3]
 for convenient access to match lists and related functionality.
 
 [1]: /docs/hooks/use-match
