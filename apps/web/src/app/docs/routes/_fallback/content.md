@@ -1,6 +1,6 @@
 # \_fallback.tsx
 
-The `\_fallback.tsx` module defines **void components** that are rendered by
+The `\_fallback.tsx` module defines **fallback components** that are rendered by
 [Outlets](/docs/components/outlet).
 
 Fallback modules must `export default` an object containing the fallback components.
