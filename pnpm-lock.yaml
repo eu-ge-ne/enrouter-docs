@@ -36,8 +36,8 @@ importers:
         specifier: ^22.10.2
         version: 22.10.2
       enrouter:
-        specifier: ^0.0.40
-        version: 0.0.40(react@19.0.0)(vite@6.0.5(@types/node@22.10.2)(jiti@1.21.6)(tsx@4.19.2)(yaml@2.6.1))
+        specifier: ^0.0.41
+        version: 0.0.41(react@19.0.0)(vite@6.0.5(@types/node@22.10.2)(jiti@1.21.6)(tsx@4.19.2)(yaml@2.6.1))
       express:
         specifier: ^5.0.1
         version: 5.0.1
@@ -66,8 +66,8 @@ importers:
         specifier: workspace:*
         version: link:../web
       enrouter:
-        specifier: ^0.0.40
-        version: 0.0.40(react@19.0.0)(vite@6.0.5(@types/node@22.10.2)(jiti@1.21.6)(tsx@4.19.2)(yaml@2.6.1))
+        specifier: ^0.0.41
+        version: 0.0.41(react@19.0.0)(vite@6.0.5(@types/node@22.10.2)(jiti@1.21.6)(tsx@4.19.2)(yaml@2.6.1))
       isbot:
         specifier: ^5.1.18
         version: 5.1.18
@@ -114,8 +114,8 @@ importers:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.49)
       enrouter:
-        specifier: ^0.0.40
-        version: 0.0.40(react@19.0.0)(vite@6.0.5(@types/node@22.10.2)(jiti@1.21.6)(tsx@4.19.2)(yaml@2.6.1))
+        specifier: ^0.0.41
+        version: 0.0.41(react@19.0.0)(vite@6.0.5(@types/node@22.10.2)(jiti@1.21.6)(tsx@4.19.2)(yaml@2.6.1))
       glob:
         specifier: ^11.0.0
         version: 11.0.0
@@ -1586,8 +1586,8 @@ packages:
     resolution: {integrity: sha512-Q0n9HRi4m6JuGIV1eFlmvJB7ZEVxu93IrMyiMsGC0lrMJMWzRgx6WGquyfQgZVb31vhGgXnfmPNNXmxnOkRBrg==}
     engines: {node: '>= 0.8'}
 
-  enrouter@0.0.40:
-    resolution: {integrity: sha512-L7lDO6KtFTJ23iO2RVTJ+KzrQ9JEK6a8cSxyyY63aGmUdr+0M99SzuOPfVMPH5e0sUOnurK6zPpYqJLgHmD81Q==}
+  enrouter@0.0.41:
+    resolution: {integrity: sha512-kc4sfI++vPgZkcYpNaY2nigeoYhjIB9etxFaXuWOpQGwJRUbbs6i14h/Z93rbx4a5HoedaaOrezo9u+p8HaZtg==}
     peerDependencies:
       react: '>=18'
       vite: ^6
@@ -4249,7 +4249,7 @@ snapshots:
 
   encodeurl@2.0.0: {}
 
-  enrouter@0.0.40(react@19.0.0)(vite@6.0.5(@types/node@22.10.2)(jiti@1.21.6)(tsx@4.19.2)(yaml@2.6.1)):
+  enrouter@0.0.41(react@19.0.0)(vite@6.0.5(@types/node@22.10.2)(jiti@1.21.6)(tsx@4.19.2)(yaml@2.6.1)):
     dependencies:
       react: 19.0.0
       vite: 6.0.5(@types/node@22.10.2)(jiti@1.21.6)(tsx@4.19.2)(yaml@2.6.1)

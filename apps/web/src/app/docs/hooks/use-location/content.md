@@ -4,11 +4,12 @@
 function useLocation(): string;
 ```
 
-Returns current location.
+The `useLocation` hook provides access to the current location string, including the pathname, search, and hash.
+This hook is useful for inspecting and reacting to the current URL state.
 
 ## Example
 
-```tsx
+```ts
 import { useLocation } from "enrouter";
 
 export default {
