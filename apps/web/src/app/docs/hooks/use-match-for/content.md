@@ -4,6 +4,8 @@
 function useMatchFor(path: string): Match | undefined;
 ```
 
-Returns a `Match` object for the specified path.
+The `useMatchFor` hook returns a [Match][1] object for the specified path.
 
-The `path` parameter specifies the location to match and is required.
+- `path`: A required parameter that specifies the location to match.
+
+[1]: /docs/routes/match
