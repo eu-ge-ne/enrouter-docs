@@ -6,11 +6,11 @@ type Navigate = (to: string) => void;
 function useNavigate(): Navigate;
 ```
 
-Returns navigate function.
+The `useNavigate` hook returns a navigation function that allows you to programmatically change the current URL.
 
 ## Example
 
-```tsx
+```ts
 import { useNavigate } from "enrouter";
 
 export default {
