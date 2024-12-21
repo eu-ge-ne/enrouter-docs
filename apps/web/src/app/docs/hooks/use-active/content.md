@@ -12,8 +12,8 @@ function useActive<T>(params: UseActiveParams<T>): T;
 
 The `useActive` hook determines if a given path is active and returns a corresponding value based on the result:
 
--	If the path is active, it returns the first value from the value array.
--	Otherwise, it returns the second value.
+- If the path is active, it returns the first value from the value array.
+- Otherwise, it returns the second value.
 
 This hook is particularly useful for styling anchors or other elements based on the current location.
 
