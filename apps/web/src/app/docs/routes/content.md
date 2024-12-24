@@ -3,12 +3,11 @@
 In the application, routes are defined using a tree structure of folders and files.
 Each route comprises:
 
-1. **Folders** (e.g., `src/app/about`)
+1. Folders (e.g., `src/app/about`).
 
    The folder name determines the URL pattern of the route.
 
-2. **Files within folders** (e.g., `src/app/about/_layout.tsx`,
-   `src/app/about/_content.tsx`)
+2. Files within folders (e.g., `src/app/about/_layout.tsx`, `src/app/about/_content.tsx`).
 
    These files define the content rendered when the route is matched.
    The following files serve specific purposes:
@@ -17,7 +16,7 @@ Each route comprises:
    - [\_content.tsx](/docs/routes/_content): Specifies the route's content.
    - [\_fallback.tsx](/docs/routes/_fallback): Content rendered for "not found" cases.
 
-Content is **nested** and recursively wrapped in the layout and content of its parent routes.
+Content is nested and recursively wrapped in the layout and content of its parent routes.
 
 ## Example
 

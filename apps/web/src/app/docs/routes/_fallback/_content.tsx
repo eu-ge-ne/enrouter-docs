@@ -7,7 +7,7 @@ export default {
 function Docs() {
   return (
     <>
-      <title>enrouter docs | _void route</title>
+      <title>enrouter docs | _fallback route</title>
       <meta name="description" content="File-based router library for React" />
       <link rel="canonical" href="https://enrouter.dev/docs/routes/_fallback" />
       <Content />
