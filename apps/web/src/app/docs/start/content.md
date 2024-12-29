@@ -2,7 +2,7 @@
 
 ## Scaffold project
 
-Create new Vite project from `react-ts` template and run it:
+Create a new Vite project using the `react-ts` template and run it:
 
 ```bash
 pnpm create vite enrouter-demo --template react-ts
@@ -13,26 +13,27 @@ pnpm install
 pnpm dev
 ```
 
-You've got a basic single page React application with only one page
-available at `/` where you can click a button and increment the counter:
+This sets up a basic single-page React application with a single route (`/`).
+On this page, you can click a button to increment a counter:
 
 ![Start 0](/start-0.png "Start 0")
 
-Let's add another page with same layout but different behavior: instead of
-incrementing the counter the button will be decrementing it.
+Next, let’s add another page with the same layout but different behavior:
+instead of incrementing the counter, the button will decrement it.
 
-We will put original page at `/incr`.
-The new page which you are going to create will be located at `/decr`.
+We’ll move the original page to `/incr`, and the new page you’ll create will be located at `/decr`.
 
-Indeed, we need a home page containing links to both pages.
+Finally, we’ll create a home page with links to both routes.
 
 ## Install enrouter
+
+Install enrouter using:
 
 ```bash
 pnpm add enrouter
 ```
 
-Add `enrouter` plugin to your `vite.config.ts`:
+Then, add the enrouter plugin to your `vite.config.ts`:
 
 ```ts
 // vite.config.ts
@@ -47,10 +48,9 @@ export default defineConfig({
 });
 ```
 
-`src/app` is a folder where you put your route components.
+The `src/app` folder will contain your route components.
 
-Last step of installing `enrouter` is to add `BrowserRouter` component to the
-entry file `src/main.tsx`:
+Lastly, include the [BrowserRouter][1] component in the `src/main.tsx` entry file:
 
 ```tsx
 // src/main.tsx
@@ -76,15 +76,13 @@ main();
 
 ## Define routes
 
-Visit [Routes](/docs/routes) for more details about how routing works.
+Visit [Routes][2] for detailed information about how routing works.
 
 ### \_layout.tsx
 
-First, you need to create `_layout.tsx` file.
-It defines common style and layout shared by child routes.
-You can reuse existing `App.tsx` for style and layout and just add navigation
-links.
-Move `App.tsx` to `src/app/_layout.tsx` and modify it:
+First, create a `_layout.tsx` file to define the shared styles and layout for child routes.
+You can reuse the existing `App.tsx` file for this purpose, adding navigation links to it.
+Move `App.tsx` to `src/app/_layout.tsx` and modify it as follows:
 
 ```tsx
 // src/app/_layout.tsx
@@ -129,7 +127,7 @@ export default function Layout() {
 }
 ```
 
-Also, move `App.css` to `src/app/styles.css` and add style for menu:
+Additionally, move `App.css` to `src/app/styles.css` and add the following styles for the menu:
 
 ```css
 /* src/app/styles.css */
@@ -146,8 +144,10 @@ Also, move `App.css` to `src/app/styles.css` and add style for menu:
 
 ### \_content.tsx
 
-Finally, create `_content.tsx` files for `/incr` and `/decr` locations.
-They are very similar with a few minor differences:
+Create `_content.tsx` files for the `/incr` and `/decr` routes.
+These files will define the specific behavior for each route.
+
+Here’s the content for `/incr`:
 
 ```tsx
 // src/app/incr/_content.tsx
@@ -170,6 +170,8 @@ export default function Incr() {
 }
 ```
 
+And here’s the content for `/decr`:
+
 ```tsx
 // src/app/decr/_content.tsx
 
@@ -191,11 +193,14 @@ export default function Decr() {
 }
 ```
 
-Final result looks like this:
+The final result should look like this:
 
 ![Start 1](/start-1.png "Start 1")
 
 ## GitHub repository
 
-Also, you can clone [examples](https://github.com/eu-ge-ne/enrouter-examples)
-GitHub repo to your machine and play with it locally.
+You can also clone the [examples][3] GitHub repository to your local machine and experiment with it.
+
+[1]: /docs/components/browser-router
+[2]: /docs/routes
+[3]: https://github.com/eu-ge-ne/enrouter-examples
