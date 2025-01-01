@@ -7,6 +7,7 @@ enrouter includes a Vite plugin that automatically generates routes based on you
 ### Configuration
 
 The plugin accepts a single parameter `path`, which specifies the directory containing your route modules.
+
 During development or production builds, the plugin:
 
 1. Scans the specified folder (`path`) for route modules.

@@ -3,7 +3,7 @@
 ```ts
 interface BrowserRouterProps {
   root?: ComponentType;
-  void?: Record<string, ComponentType>;
+  fallback?: Record<string, ComponentType>;
   matches: Match[];
 }
 
@@ -16,8 +16,8 @@ enabling client-side navigation based on precomputed route matches.
 ## Props
 
 - `root` (optional): A custom root component that wraps the rendered application, useful for applying shared context or layout.
-- `void` (optional): A record of placeholder components, keyed by route names, to handle specific scenarios (e.g., missing content).
-- `matches` (required): An array of Match objects representing the routes matched for the current browser location.
+- `fallback` (optional): A record of placeholder components, keyed by route names, to handle specific scenarios (e.g., missing content).
+- `matches` (required): An array of [Match][1] objects representing the routes matched for the current browser location.
 
 ## Example
 
@@ -28,3 +28,5 @@ const matches = await matchLocation(window.location.pathname);
 
 hydrateRoot(document, <BrowserRouter matches={matches} />);
 ```
+
+[1]: /docs/routes/match

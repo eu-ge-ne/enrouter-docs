@@ -3,7 +3,7 @@
 ```ts
 interface StaticRouterProps {
   root?: ComponentType;
-  void?: Record<string, ComponentType>;
+  fallback?: Record<string, ComponentType>;
   location: string;
   matches: Match[];
 }
@@ -16,11 +16,10 @@ It uses precomputed route matches to render the application for a specific locat
 
 ## Props
 
-- `root` (optional): A custom root component that wraps the rendered application.
-  This can be used for applying shared context or layout.
-- `void` (optional): A record of placeholder components, keyed by route names, to handle specific scenarios (e.g., missing content).
+- `root` (optional): A custom root component that wraps the rendered application, useful for applying shared context or layout.
+- `fallback` (optional): A record of placeholder components, keyed by route names, to handle specific scenarios (e.g., missing content).
 - `location` (required): The URL location to resolve and render routes.
-- `matches` (required): An array of Match objects representing the routes matched for the given location.
+- `matches` (required): An array of [Match][1] objects representing the routes matched for the current browser location.
 
 ## Example
 
@@ -41,3 +40,5 @@ export default {
   },
 };
 ```
+
+[1]: /docs/routes/match
