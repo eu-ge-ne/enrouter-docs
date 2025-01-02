@@ -1,13 +1,12 @@
 # \_layout.tsx
 
-Module exporting layout components which are rendered by
-[Outlets](/docs/components/outlet).
+The `_layout.tsx` module defines layout components that are rendered by [Outlets][1].
 
-By convention, layout modules must `export default` object with components.
+By convention, layout modules must `export default` an object containing the components.
 
-Outlets select components for rendering by name.
-Keys of exported object are the names of components.
-They connect components to Outlets.
+Outlets select components for rendering based on their names.
+The keys in the exported object serve as the component names,
+establishing a connection between the components and the corresponding Outlets.
 
 ## Example
 
@@ -33,3 +32,5 @@ function Layout() {
   );
 }
 ```
+
+[1]: /docs/components/outlet
