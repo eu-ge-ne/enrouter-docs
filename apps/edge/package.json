@@ -12,12 +12,12 @@
     "cf-typegen": "wrangler types"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20241230.0",
+    "@cloudflare/workers-types": "^4.20250109.0",
     "@enrouter/tsconfig": "workspace:*",
     "@enrouter/web": "workspace:*",
     "enrouter": "^0.0.44",
-    "isbot": "^5.1.19",
-    "typescript": "^5.7.2",
-    "wrangler": "^3.99.0"
+    "isbot": "^5.1.21",
+    "typescript": "^5.7.3",
+    "wrangler": "^3.101.0"
   }
 }

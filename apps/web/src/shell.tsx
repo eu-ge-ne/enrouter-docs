@@ -32,7 +32,7 @@ gtag('config', 'G-ELBVYEYVVT');
             }}
           ></script>
           <meta charSet="utf-8" />
-          <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
+          <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
           {styles?.map((href) => (
             <link key={href} rel="stylesheet" href={href}></link>
           ))}
